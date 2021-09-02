@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 // https://leetcode.com/problems/find-in-mountain-array/
 // TC-- o(logn)

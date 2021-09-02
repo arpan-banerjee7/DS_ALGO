@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 // https://leetcode.com/problems/split-array-largest-sum/
 // https://www.geeksforgeeks.org/painters-partition-problem-set-2/

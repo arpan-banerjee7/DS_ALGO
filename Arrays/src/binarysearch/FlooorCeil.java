@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 // https://www.geeksforgeeks.org/ceiling-in-a-sorted-array/
 // https://leetcode.com/problems/find-smallest-letter-greater-than-target/

@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/
 public class FirstLastOccurance {

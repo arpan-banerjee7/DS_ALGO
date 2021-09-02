@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 // https://leetcode.com/problems/peak-index-in-a-mountain-array/
 // https://leetcode.com/problems/find-peak-element/

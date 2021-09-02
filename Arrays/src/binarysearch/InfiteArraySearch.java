@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 // https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
 //TC -- o(logn)

@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 // https://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/#
 public class FindRotationCount {

@@ -1,4 +1,4 @@
-package array.questions.binarysearch;
+package binarysearch;
 
 public class OrderAgnosticSearch {
 
