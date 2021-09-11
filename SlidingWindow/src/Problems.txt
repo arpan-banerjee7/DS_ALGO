@@ -1,0 +1,25 @@
+Fixed
+1) Max-Min sub array of size k
+2) 1st -ve in every window of size k
+3) Count occurences of anagrams
+4) Max of all subarray of size k
+5) Max of Min of all subarray of size k
+
+Variable
+1) Largest/Smallest subarrays of size k
+2) Largest subarray with K distinct characters
+3) Largest subarray with no repeating characters
+4) Pick Toys
+5) Minimum window substring
+
+----------------------------------------------------------------------------------------------------------------------
+// https://leetcode.com/problems/continuous-subarray-sum/
+
+862. Shortest Subarray with Sum at Least K
+// https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/
+
+longest substring with atmost k unique characters= Pick Toys
+https://www.youtube.com/watch?v=seOKHXB_w74&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=12
+https://www.youtube.com/watch?v=qOPxRziTxEQ
+
+

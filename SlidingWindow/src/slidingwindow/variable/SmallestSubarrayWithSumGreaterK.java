@@ -1,7 +1,8 @@
-package slidingwindow.normal;
+package slidingwindow.variable;
 
 // https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/
 // For negative numbers- https://www.geeksforgeeks.org/find-subarray-with-given-sum-with-negatives-allowed-in-constant-space/
+// https://leetcode.com/problems/minimum-size-subarray-sum/
 
 // TC-- o(n)
 // Space -o(1)
@@ -32,6 +33,23 @@ public class SmallestSubarrayWithSumGreaterK {
 			}
 		}
 		return min_len;
+	}
+
+	// Common pattern solution
+	public int minSubArrayLen(int target, int[] nums) {
+		int start = 0;
+		int sum = 0;
+		int min = Integer.MAX_VALUE;
+		for (int end = 0; end < nums.length; end++) {
+			sum += nums[end];
+
+			while (sum >= target) {
+				min = Math.min(min, end - start + 1);
+				sum -= nums[start];
+				start++;
+			}
+		}
+		return min == Integer.MAX_VALUE ? 0 : min;
 	}
 
 	// Driver program to test above functions
