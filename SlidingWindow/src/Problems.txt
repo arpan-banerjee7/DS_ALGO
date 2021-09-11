@@ -22,4 +22,6 @@ longest substring with atmost k unique characters= Pick Toys
 https://www.youtube.com/watch?v=seOKHXB_w74&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=12
 https://www.youtube.com/watch?v=qOPxRziTxEQ
 
+https://leetcode.com/problems/subarrays-with-k-different-integers/
+
 
