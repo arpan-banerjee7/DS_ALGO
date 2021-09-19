@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------------------------------------------------
+// helper
+print all substrings- https://www.geeksforgeeks.org/program-print-substrings-given-string/
+print subarrays of an array- https://java2blog.com/print-subarrays-given-array/
+ recursive solution- https://algorithms.tutorialhorizon.com/print-all-subarrays-using-recursion/
+
+count occurrences of anagram- https://www.geeksforgeeks.org/count-occurrences-of-anagrams/
+ frequency char array- https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/
+
+longest substring without repeating characters - brute force- https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+
+clone a linkedlist with random pointer and head - https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/
+https://leetcode.com/problems/copy-list-with-random-pointer/
+___________________________________________________________________________
+
+KMP
+
+find how many chars need to be added in front to make palindrome-
+https://www.geeksforgeeks.org/minimum-characters-added-front-make-string-palindrome/
+
+check if the pattern is present in string or not
+https://www.geeksforgeeks.org/check-if-a-given-pattern-exists-in-a-given-string-or-not/
+Check if a string is substring of another- https://www.geeksforgeeks.org/check-string-substring-another/
