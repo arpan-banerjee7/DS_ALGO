@@ -1,4 +1,4 @@
-package slidingwindow.hashmap;
+package problems;
 
 import java.util.HashMap;
 

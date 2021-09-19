@@ -18,7 +18,7 @@ public class NextGreaterElement {
 		Stack<Long> st = new Stack<>();
 		long[] res = new long[n];
 		for (int i = n - 1; i >= 0; i--) {
-			while (!st.isEmpty() && st.peek() < arr[i]) {
+			while (!st.isEmpty() && st.peek() <= arr[i]) {
 				st.pop();
 			}
 			if (st.isEmpty()) {
@@ -33,7 +33,7 @@ public class NextGreaterElement {
 	}
 
 	public static void main(String[] args) {
-		long arr[] = { 11, 13, 21, 3 };
+		long arr[] = { 11, 13, 13, 21, 3 };
 		int n = arr.length;
 		long[] res = nextGreaterElement(arr, n);
 		for (long l : res) {

@@ -1,4 +1,4 @@
-package slidingwindow.variable;
+package problems;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ public class LongestSubstringWithoutRepeatingChars {
 
 	// variable window / variation of longest subarray with k unique chars
 	// here all characters should be uiniqe so k=length of string
-	private static int longestUniqueSubsttr(String S) {
+	int longestUniqueSubsttr(String S) {
 		int start = 0;
 		int max = Integer.MIN_VALUE;
 		Map<Character, Integer> seen = new HashMap<>();
@@ -44,41 +44,8 @@ public class LongestSubstringWithoutRepeatingChars {
 		return max;
 	}
 
-	// brute force
-	public static Boolean areDistinct(String str, int i, int j) {
-
-		// Note : Default values in visited are false
-		boolean[] visited = new boolean[26];
-
-		for (int k = i; k <= j; k++) {
-			if (visited[str.charAt(k) - 'a'] == true)
-				return false;
-
-			visited[str.charAt(k) - 'a'] = true;
-		}
-		return true;
-	}
-
-	// Returns length of the longest substring
-	// with all distinct characters.
-	// brute force
-	public static int longestUniqueSubsttr1(String str) {
-		int n = str.length();
-
-		// Result
-		int res = 0;
-
-		for (int i = 0; i < n; i++)
-			for (int j = i; j < n; j++)
-				if (areDistinct(str, i, j))
-					res = Math.max(res, j - i + 1);
-
-		return res;
-	}
-
 	public static void main(String[] args) {
-		String s = "geeksforgeeks";
-		System.out.println(longestUniqueSubsttr(s));
+		// TODO Auto-generated method stub
 
 	}
 

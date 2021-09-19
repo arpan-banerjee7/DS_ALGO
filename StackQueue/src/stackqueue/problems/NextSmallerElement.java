@@ -18,7 +18,7 @@ public class NextSmallerElement {
 		int n = arr.length;
 
 		for (int i = n - 1; i >= 0; i--) {
-			while (!st.isEmpty() && st.peek() > arr[i]) {
+			while (!st.isEmpty() && st.peek() >= arr[i]) {
 				st.pop();
 			}
 			if (st.isEmpty()) {
