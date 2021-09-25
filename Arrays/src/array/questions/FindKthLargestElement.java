@@ -1,5 +1,7 @@
 package array.questions;
 
+import java.util.PriorityQueue;
+
 // Quick Select
 // https://leetcode.com/problems/kth-largest-element-in-an-array/
 // https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
@@ -37,11 +39,44 @@ public class FindKthLargestElement {
 
 	}
 
-	public static void main(String[] args) {
-		int[] nums= {3,2,1,5,6,4};
-		int k =2;;
+	// TC - nlogk
+	// kth largest- maintain a mean heap of size k
+	public static int findKthLargest(int[] nums, int k) {
+		PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+		for (int n : nums) {
+			minHeap.add(n);
+			if (!minHeap.isEmpty() && minHeap.size() > k) {
+				minHeap.poll();
+			}
+		}
+		return minHeap.poll();
+	}
+
+	// TC o(nlogn) - doubt
+	public static int findKthLargest1(int[] nums, int k) {
 		int n = nums.length;
-        System.out.println(quickSelect(nums,0,n-1,n-k));
+		int ans = 0;
+		int j = 0;
+
+		PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
+		for (int i = 0; i < n; i++) {
+			pq.add(nums[i]);
+		}
+		while (j < k) {
+			if (!pq.isEmpty()) {
+				ans = pq.poll();
+				j++;
+			}
+		}
+		return ans;
+	}
+
+	public static void main(String[] args) {
+		int[] nums = { 3, 2, 1, 5, 6, 4 };
+		int k = 2;
+		;
+		int n = nums.length;
+		System.out.println(quickSelect(nums, 0, n - 1, n - k));
 
 	}
 
