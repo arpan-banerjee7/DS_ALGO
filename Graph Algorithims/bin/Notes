@@ -1,0 +1,76 @@
+											Graph Algorithms:
+										=========================
+
+1. Graph Representation
+https://www.geeksforgeeks.org/graph-and-its-representations/
+
+----------------------------------------------------------------------------------------------------------------------------
+
+2. BFS
+https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+https://youtu.be/UeE67iCK2lQ  (TUF)
+
+3. DFS
+https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+https://youtu.be/uDWljP2PGmU  (TUF)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+4. DSUF (Disjoint Set - Union/ Find)
+https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/ (Brute Force)
+
+5. Union by Path Compression, Union by Rank
+https://www.geeksforgeeks.org/disjoint-set-data-structures/
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6. Find connected components- 
+	a) DFS/BFS- https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/
+    			https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/
+
+	b) DSUF- https://www.geeksforgeeks.org/number-of-connected-components-of-a-graph-using-disjoint-set-union/
+			 https://www.geeksforgeeks.org/find-number-of-islands/
+	
+----------------------------------------------------------------------------------------------------------------------------
+
+7. Cycle Detection in an Undirected graph-
+	a) BFS- https://youtu.be/A8ko93TyOns (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/cycleCheckUGBfsJava (code TUF)
+	b) DFS- https://youtu.be/Y9NFqI6Pzd4 (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/cycleCheckUGDfsJava (code TUF)
+			https://www.geeksforgeeks.org/detect-cycle-undirected-graph/
+			
+----------------------------------------------------------------------------------------------------------------------------
+
+8. Check Bipartite-
+	a) BFS- https://youtu.be/nbgaEu-pvkU (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/bipartiteGraphJavaBfs (code TUF)
+	b) DFS- https://youtu.be/uC884ske2uQ (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/bipartiteGraphJavaDfs (code TUF)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+11. Topological Sort- 
+	a) DFS- https://youtu.be/Yh6EFazXipA (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/topoSortJava (code TUF)
+	
+	b) BFS Kahn's Algo- https://youtu.be/rZv_jHZva34 (TUF)
+						https://github.com/striver79/StriversGraphSeries/blob/main/topoSortJavaBfs (code TUF)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Weighted directed graph- implementation-
+https://algorithms.tutorialhorizon.com/weighted-graph-implementation-java/
+
+----------------------------------------------------------------------------------------------------------------------------
+
+10. Cycle Detection in a Directed graph-
+	a) DFS- https://youtu.be/uzVUw90ZFIg (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/cycleCheckDGDfsJava (code TUF)
+	
+	
+	b) BFS Kahn's Algo- https://youtu.be/V6GxfKDyLBM (TUF)
+						https://github.com/striver79/StriversGraphSeries/blob/main/checkCycleDGBFSJava (code TUF)
+
+---------------------------------------------------------------------------------------------------------------
+	
