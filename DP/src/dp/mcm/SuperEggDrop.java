@@ -6,7 +6,7 @@ import java.util.Arrays;
 // https://leetcode.com/problems/super-egg-drop/discuss/1209313/Super-Egg-Drop-CPP-Recursive-Memoization-Optimised-Memoization-Memoization-%2B-Binary-Search
 // LC test case pas- apply binary search
 
-public class EggDrop {
+public class SuperEggDrop {
 
 	int[][] dp;
 
@@ -53,7 +53,7 @@ public class EggDrop {
 
 	public static void main(String[] args) {
 		int  k = 2, n = 6;
-		EggDrop eggDrop=new EggDrop();
+		SuperEggDrop eggDrop=new SuperEggDrop();
 		System.out.println(eggDrop.superEggDrop(k, n));// Output-3
 	}
 }
