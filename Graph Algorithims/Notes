@@ -1,0 +1,239 @@
+											Graph Algorithms:
+										=========================
+
+1. Graph Representation
+https://www.geeksforgeeks.org/graph-and-its-representations/
+
+----------------------------------------------------------------------------------------------------------------------------
+
+2. BFS
+https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+https://youtu.be/UeE67iCK2lQ  (TUF)
+
+3. DFS
+https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+https://youtu.be/uDWljP2PGmU  (TUF)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+4. DSUF (Disjoint Set - Union/ Find)
+https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/ (Brute Force)
+
+5. Union by Path Compression, Union by Rank
+https://www.geeksforgeeks.org/disjoint-set-data-structures/
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6. Find connected components- 
+	a) DFS/BFS- https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/
+    			https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/
+
+	b) DSUF- https://www.geeksforgeeks.org/number-of-connected-components-of-a-graph-using-disjoint-set-union/
+			 https://www.geeksforgeeks.org/find-number-of-islands/
+	
+----------------------------------------------------------------------------------------------------------------------------
+
+7. Cycle Detection in an Undirected graph-
+	a) BFS- https://youtu.be/A8ko93TyOns (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/cycleCheckUGBfsJava (code TUF)
+	b) DFS- https://youtu.be/Y9NFqI6Pzd4 (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/cycleCheckUGDfsJava (code TUF)
+			https://www.geeksforgeeks.org/detect-cycle-undirected-graph/
+			
+----------------------------------------------------------------------------------------------------------------------------
+
+8. Check Bipartite-
+	a) BFS- https://youtu.be/nbgaEu-pvkU (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/bipartiteGraphJavaBfs (code TUF)
+	b) DFS- https://youtu.be/uC884ske2uQ (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/bipartiteGraphJavaDfs (code TUF)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+11. Topological Sort- 
+	a) DFS- https://youtu.be/Yh6EFazXipA (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/topoSortJava (code TUF)
+	
+	b) BFS Kahn's Algo- https://youtu.be/rZv_jHZva34 (TUF)
+						https://github.com/striver79/StriversGraphSeries/blob/main/topoSortJavaBfs (code TUF)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Weighted directed graph- implementation-
+https://algorithms.tutorialhorizon.com/weighted-graph-implementation-java/
+
+----------------------------------------------------------------------------------------------------------------------------
+
+10. Cycle Detection in a Directed graph-
+	a) DFS- https://youtu.be/uzVUw90ZFIg (TUF)
+			https://github.com/striver79/StriversGraphSeries/blob/main/cycleCheckDGDfsJava (code TUF)
+	
+	
+	b) BFS Kahn's Algo- https://youtu.be/V6GxfKDyLBM (TUF)
+						https://github.com/striver79/StriversGraphSeries/blob/main/checkCycleDGBFSJava (code TUF)
+
+---------------------------------------------------------------------------------------------------------------
+
+
+KRUSHKAL'S ALGO- uses disjoint set to find MST--- TC - O(ELogE + ELogV)
+https://www.youtube.com/watch?v=1KRmCzBl_mQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=24
+code- https://github.com/striver79/StriversGraphSeries/blob/main/KruskalAlgoJava
+Steps-
+1) Sort adj list according to weights
+2) Iterate the adj list after sorting, i.e pick one node at a time
+3) & check if they belong to the same component/has same parent ot not using find method of disjoint set algo-
+4) If same parent then ignore- won t be in the MST
+else- add that node in MST increase the count and call union of disjoint set
+
+
+https://www.youtube.com/watch?v=3gbO7FDYNFQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=23
+Need of path compression? Since at the union step we do 
+at 14:00 secs- using the same example-
+last query union (3,7) 
+
+x= findParent(7); // 7->6->4->4->4 so finally parent is 4 after 3 hops 
+y=findParent(3); // 3->1->1 parent 1
+
+lets say we dn t do path compression we keep the parent array as it is in this step.
+Now the next step is union
+which says -
+lets say rank of x > rank of y
+parent[y]=x; rank of 4 is greater than rank of 2
+that means parent[2]=4
+								
+PRIM's ALGO-- TC O(E log V)/ bad implementation o(v^2)
+			
+			              ******************************************
+Single-source shortest path
+Dijkstra-- done
+
+BELLMAN FORD - Dijkstra does not work for -ve edge wieght cycle, bellman ford doesn not work as well
+but bellman ford can detect -ve edge weight cyle. so save us from infinte loop. Even slight modification of dijkstra can do the same job.
+coe striver- https://github.com/striver79/StriversGraphSeries/blob/main/BellmanFordJava
+Why v-1 times? https://riptutorial.com/algorithm/example/24029/why-do-we-need-to-relax-all-the-edges-at-most--v-1--times
+
+In Bellman ford- Steps-
+1) Initialize all distance values as infinity. Source as 0
+2) Repeat v-1 times 
+if d[u]+wt[uv]<d[v]  ----> update d[v] else skip
+3)After n-1 relaxations relax one more time, if we find a new shortest distance then it has a -ve edge wieght cycle, else we gt our ans
+
+
+			
+			              ******************************************
+FLyod warshal- finds ASPS - sortest distance froma each node to every other node
+this can be also achieved by dijkstra, run dijkstra for all nodes
+TC- normal- o(v^2)*v= o(v^3)
+TC- PQ- o(elogv)*v, worst case e=v^2 so again o(v^3logv)
+
+TC for FLoyd Warshall- o(v^2)*v v^2 for every iteration we find shortest distance for each node to every other node inlcuding the given node
+
+code- https://gist.github.com/SuryaPratapK/19c9acc834711f7e5cd8b6f710b0344f
+
+Techdose
+https://www.youtube.com/watch?v=nV_wOZnhbog&list=PLEJXowNB4kPzByLnnFYNSCoqtFz0VKLk5&index=25
+
+
+
+
+									******************************************
+
+######Kosaraju' s ALGO- to find number of strongly connected components in a graph SCCS
+
+Brute force- 
+
+Approach 1
+To find weather a graph is strongly connected or not.
+Iterate for all vertices- and for each vertice run DFS , if in any DFS call it does not visit all the nodes then it is not a strongly connected graph. 
+TC- o(v*(v+e) v+e for a DFS call and v for DFS calls for all the nodes
+
+Approach 2
+If the graph i strongly connected then if there is an edge from x->y then there will be an edge from y->x
+And we can reach every node from evry other node in the graph
+so, x->v->y and y->v->x will hold true
+
+Steps-
+1)pick a random edge run dfs it shouldd reach all the vertices-
+2)reverse the edges
+3) run dfs again for the same node, if it does not reach all the vertices then it is not SCCS
+TC- o(v+e)+o(v+e)=o(v+e) worst case e=v^2 so o(v^2)
+
+Approach 3 using Flyod Warshall algo-
+1) Run FLoyd warshal algo, we will get the Shortest paths from each node to every other node
+2) if apart from the diagonals we have infinity values for any pair of node then it is not a SCCS
+TC - o(v^2)*v
+
+https://www.techiedelight.com/check-given-graph-strongly-connected-not/
+
+Efficiet apporach- https://gist.github.com/SuryaPratapK/46eab4ae86095c1bdf68b233fb2998c7
+#######Kosaraju' s ALGO
+Steps-
+1)Perform DFS traversal on graph, push nodes to stack before returning DFS1
+2) Find transpose of the graph i.e reverse all the edges
+3)Pop nodes one by one from the stack and apply DFS, each DFS call will give on SCCS
+
+TC-3*o(v+e)= o(v+e)
+
+#######Tarjans strongly connected component TC- o(v+e) algo-https://www.youtube.com/watch?v=ZeDNSeilf-Y&list=PLEJXowNB4kPzByLnnFYNSCoqtFz0VKLk5&index=28
+
+Steps- take discovery time array, lowest DNA array, a stack to enable us to print the scc's, and a boolean presentInStack array- to identify cross edge and back edges.
+
+We won t process cross edge, we will process only back edges and tree edges
+1)Start DFS call, before iterating through the adjacent nodes of the given node, fill the required values in the above mentioned data strutures. for(int v: adj[u])
+2) Recursion 1--if not visited make a new dfs call(Recursion) for the ajdacent nodes.
+3) Backtracking 1 -- while returning back from the recursion, update the low value of the parent node as min(low[child],low[parent])
+2) Recursion 1 -else --or of 2nd step- if visited, then it can be either cross edge or backedge. We will ignore cross edges.
+Identification of backedge- if visited true-(dicovery array is filled for this node) and presentInStack value is true for it
+3) dn t make any recursive call for this child, just update the low value as low[u] = min(low[u],disc[v]); v=child
+4) backtracking 2 -- when there are no recursion calls to bemade for u, i.e when all the sub graphs are visited for parent u, then check if(low[u]==disc[u])	//If u is head node of SCC. Pop from the stack, mark presentInStack as false till u reach the current node.
+5) repreat step 4.
+
+####### ARTICULATION POINTS/ CUT EDGE--- o(v+e) https://www.youtube.com/watch?v=64KK9K4RpKE&list=PLEJXowNB4kPzByLnnFYNSCoqtFz0VKLk5&index=30
+code- https://gist.github.com/SuryaPratapK/f31c88f9bfe23585611c912dd472c25d
+ A node is an articulation point if after removing this the number of components increases.
+ 
+ Brute force- o(v*(v+e))
+ 1) Take out each node at a time along with its edges
+ 2) DFS for the remaining edges and check if all the nodes are reachable. If false, then it is one of the articulation points
+ 3) Put back that node, remove next one and repeat
+ 
+ Efficiet Approach using Tarjans's algo
+ Steps-
+ two imp cases-
+ 1) Root Node- to be an articulation point- it should have more than one subgraphs.
+ 2) Non Root Node- to be an articulation point- low value of a subgraph of it should be >= to the discovery time of itself
+ 
+1) Take disc, low array, children variable parent array to identify if its a root node or non root node
+Initialize children before going into each DFS call, to count the children of each node.
+2) Iterate for each adjacent nodes, 
+make children+=1
+make parent[adjacent nde]=current node
+for(int v: adj[u])
+	{
+		if(disc[v]==-1)	//If v is not visited
+		{
+Make DFS call if it is not visited, i.e disc[v]==-1
+3) else of step 2- if it is already visited then it can be either cross edge or back edge.
+here we will process for both back edge and cross edge- we will ignore if the edge is to the parent of the adjecent vertex(v)
+else if(v!=parent[u])	//Ignore child to parent edge
+			low[u] = min(low[u],disc[v]);
+4) Backtracking 1-- low[u] = min(low[u],low[v]);
+5) Backtracking 2 - case 1 check--- if(parent[u]==-1 and children>1)	//Case-1: U is root
+				articulation_Point[u] = true;
+6) Backtracking 3 - case 2 check---if(parent[u]!=-1 and low[v]>=disc[u])	//Case-2: Atleast 1 component will get separated
+				articulation_Point[u] = true;
+
+
+########## Bridges in graph- 
+Brute force- O(e*(e+v))
+https://www.hackerearth.com/practice/algorithms/graphs/articulation-points-and-bridges/tutorial/
+https://leetcode.com/problems/critical-connections-in-a-network/discuss?currentPage=3&orderBy=most_relevant&query=java%20brute%20force
+
+best- coding ninjas brute force-
+https://www.codingninjas.com/codestudio/problems/bridges-in-graph_893026?leftPanelTab=2
+https://www.codingninjas.com/codestudio/problems/bridges-in-graph_893026?leftPanelTab=0
+
+Efficient -o(v+e)
+code- https://gist.github.com/SuryaPratapK/2774cb957a27448b485609418e272f2b
+
+	

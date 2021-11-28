@@ -1,0 +1,27 @@
+					----------------------LikedList notes-----------------
+
+Basic Operation- Print, Insertion and Deletion
+https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/
+https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/
+
+Delete recursive- https://www.geeksforgeeks.org/recursive-function-delete-k-th-node-linked-list/
+
+Find Length- iterative and recursive - https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/
+
+(imp concept)Check if linkedlist is even or odd - https://www.geeksforgeeks.org/check-whether-the-length-of-given-linked-list-is-even-or-odd/
+
+FInd Middle of a LinkedList - https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/
+
+Count number of occ- https://www.geeksforgeeks.org/write-a-function-that-counts-the-number-of-times-a-given-int-occurs-in-a-linked-list/
+
+Detect loop in a linkedlist- count number of nodes in that loop- https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/
+
+Check Palindrome - method 2 - https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/
+to do- recursive method to check palindrome
+
+reverse a linkedlist (iterative and recursive)- https://www.geeksforgeeks.org/reverse-a-linked-list/
+
+Segregate even and odd nodes in a Linked List- https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/
+
+
+https://www.geeksforgeeks.org/minimum-sum-two-numbers-formed-digits-array/
