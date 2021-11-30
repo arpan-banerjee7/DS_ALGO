@@ -37,3 +37,26 @@ Best Time to buy sell stock 2-
 https://www.youtube.com/watch?v=K8iHi8AW1ls
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/submissions/
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/1569093/C%2B%2BPython-Clean-and-Simple-Solution-w-Detailed-Explanation-and-Images-or-Buy-Low-Sell-High
+	
+763. Partition Labels
+https://www.youtube.com/watch?v=B7m8UmZE-vw Neetcode two pointers o(n) o(26) extra space
+	https://leetcode.com/problems/partition-labels/
+	
+	------------------------------------------------------Striver Greedy---------------------------------------------------
+	
+Notes-- Examples of comparator
+https://leetcode.com/submissions/detail/594288888/
+ Arrays.sort(events, (a, b) -> a[1] == b[1] ? a[0] - b[0] : a[1] - b[1]);
+ https://java-journal.blogspot.com/2011/01/when-to-use-comparable-and-when-to-use.html
+ 
+ Default implementation of Arrays.sort and collection.sort in java - https://www.youtube.com/watch?v=oM3g-rkUlaE
+ 
+N meetings in one room-
+https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=2 Striver	
+https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1#		
+
+Min Platforms- same as Meeting rooms 2
+https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=2
+	https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#
+
+	

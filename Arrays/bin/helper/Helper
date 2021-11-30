@@ -21,3 +21,12 @@ https://www.geeksforgeeks.org/minimum-characters-added-front-make-string-palindr
 check if the pattern is present in string or not
 https://www.geeksforgeeks.org/check-if-a-given-pattern-exists-in-a-given-string-or-not/
 Check if a string is substring of another- https://www.geeksforgeeks.org/check-string-substring-another/
+
+---------------------------------------------------Java Comparator/Comparable---------------------------------------------------
+	
+Notes-- Examples of comparator
+https://leetcode.com/submissions/detail/594288888/
+ Arrays.sort(events, (a, b) -> a[1] == b[1] ? a[0] - b[0] : a[1] - b[1]);
+ https://java-journal.blogspot.com/2011/01/when-to-use-comparable-and-when-to-use.html
+ 
+ Default implementation of Arrays.sort and collection.sort in java - https://www.youtube.com/watch?v=oM3g-rkUlaE
