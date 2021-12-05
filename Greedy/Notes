@@ -59,4 +59,52 @@ Min Platforms- same as Meeting rooms 2
 https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=2
 	https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#
 
+
+--------------------------------------------------------More Questions-----------------------------------------------------=
+
+1419. Minimum Number of Frogs Croaking
+same as meeting rooms 2 and min no of platforms, but implentation is a bit difficult
+https://leetcode.com/problems/minimum-number-of-frogs-croaking/
+code-1- https://leetcode.com/problems/minimum-number-of-frogs-croaking/discuss/1127569/Java-or-greedy-or-explained-and-with-picture-illustration
+code 2- https://leetcode.com/problems/minimum-number-of-frogs-croaking/discuss/1569341/Java-or-Greedy-or-Simple-or-Beats-100-or-Commented
+
+
+Fractional Knapsack- beaware of double=int/int divsions- typecasting to double required
+https://www.youtube.com/watch?v=F_DDzYnxO14&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=6
+	https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1#
+	
+
+Minimum coins- Todo Dp version coin change problem
+if (V >= deno[i])
+{
+int number=V/deno[i];
+V-=deno[i]*number;
+for(int j=0;j<number;j++){
+ans.add(deno[i]);
+}
+https://www.youtube.com/watch?v=mVg9CfJvayM&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=5
+https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
+
+
+1353. Maximum Number of Events That Can Be Attended
+https://costia.medium.com/leetcode-1353-maximum-number-of-events-that-can-be-attended-medium-7afca19b1292
+# TC o(n2)
+	https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/
+	
+	
+Job Sequencing gfg-// idea is to perform job with maximum profit first, but on the last day
+    // of its deadline, so that we can perform other jobs as well 
+	//TC- O(nlogn)+o(m*n)--> to do cut down o(m*n)
+https://www.youtube.com/watch?v=LjPx4wQaRIs&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=3
+	https://www.geeksforgeeks.org/job-sequencing-problem/
+	
+	
+	
+1235. Maximum Profit in Job Scheduling
+https://www.youtube.com/watch?v=43bs9C2Zjus	
+	https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+	
+	
+	
+
 	

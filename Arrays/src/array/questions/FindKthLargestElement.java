@@ -8,6 +8,20 @@ import java.util.PriorityQueue;
 
 //TC--- Avg- o(n^2)
 //      BC-  o(n)
+
+/*
+3 ways-
+
+Normal sort and n-k th element nlogn
+quick select Tc avg o(n) worst case o(n^2)
+// TC - nlogk
+// kth largest- maintain a mean heap of size k
+Max heap- put all the elements in heap and start popping till we find the kth largets element
+// TC O(n + klogn) time as O(n) to build the heap and O(klogn) time to heapify the heap again.
+Sort Colors tc- O(N) SPACE O(1)
+https://leetcode.com/problems/sort-colors/
+*/
+
 public class FindKthLargestElement {
 	private static int findPivot(int[] nums, int low, int high) {
 		int i = low - 1;
