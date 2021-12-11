@@ -1,0 +1,114 @@
+
+Count inversions-- gave me a hard time
+https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1#
+https://www.techiedelight.com/inversion-count-array/
+
+121. Best Time to Buy and Sell Stock
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+------------------------------------------------------------------------------------------------------------------------------------------
+169. Majority Element
+https://leetcode.com/problems/majority-element/
+Bit magic - https://www.youtube.com/watch?v=0s3zqYaDInE&t=2s
+Check Strivers intuition for Moore's Voting algo-
+https://leetcode.com/problems/majority-element-ii/discuss/1614484/Java-or-o(n2)-Brute-Force-or-o(n)-single-pass-HashMap-or-Boyer-Moore-Algo
+
+229. Majority Element II  
+https://leetcode.com/problems/majority-element-ii/discuss/1614484/Java-or-o(n2)-Brute-Force-or-o(n)-single-pass-HashMap-or-Boyer-Moore-Algo
+test case 111
+https://leetcode.com/problems/majority-element-ii/
+Striver
+
+
+Generalized sol- n/k -- always we wll have k-1 elements
+https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/
+https://www.youtube.com/watch?v=cIgDFIoA_s0
+n=2 -> 1 
+n=3--> 2 elements can be in the ans
+n=k-> k-1 elements can be in the ans
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+42. Trapping Rain Water
+https://leetcode.com/problems/trapping-rain-water/
+Intuition-- https://www.youtube.com/watch?v=XqTBrQYYUcc   --o(1) lower envelope, optimization using two pointer technique
+Striver- https://www.youtube.com/watch?v=XqTBrQYYUcc
+code-
+https://leetcode.com/problems/trapping-rain-water/discuss/1277441/Java-Two-pointers-o(n)-time-o(1)-space
+
+
+135. Candy Distribution Problem
+[1,2,87,87,87,2,1] 13
+[1,2,3,4,2,1] 13
+[1,2,3,2,4,2,1] 13
+
+https://leetcode.com/problems/candy/discuss/1230528/Simple-Java-solution-with-comprehensive-comments-and-explanation-for-intuition
+Chocolate Distribution Problem | Set 2 - GeeksforGeeks
+
+
+4. Median of Two Sorted Arrays
+https://leetcode.com/problems/median-of-two-sorted-arrays/
+https://www.youtube.com/watch?v=NTop3VTjmxk striver
+https://www.youtube.com/watch?v=NTop3VTjmxk
+extremely dfficult to write the code, can t write it even after seeing the sol
+lot of edge cases concept is simple
+
+
+1. Two Sum
+https://leetcode.com/problems/two-sum/
+
+167. Two Sum II - Input Array Is Sorted
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
+
+15. 3Sum
+Diff bw arrays.as list -- https://stackoverflow.com/questions/16748030/difference-between-arrays-aslistarray-and-new-arraylistintegerarrays-aslist
+https://stackoverflow.com/questions/1073919/how-to-convert-int-into-listinteger-in-java#:~:text=the%20other%20answers-,expect,-.
+Imp Test cases--
+[-1,0,1,2,-1,-4]-- ans [[-1,-1,2],[-1,0,1]]
+[-2,0,0,2,2]-- ans [[-2,0,2]]
+https://www.youtube.com/watch?v=jzZsG8n2R9A   Neetcode
+https://leetcode.com/problems/3sum/
+
+33. Search in Rotated Sorted Array
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+18. 4Sum
+https://leetcode.com/problems/4sum/
+Two solutions- 1. With 4 nested loops 2.Replace last two loops with Two pointer technique
+
+454. 4Sum II  
+TC- o(n^2)
+https://leetcode.com/problems/4sum-ii/
+https://www.youtube.com/watch?v=XHlA0KdvQBc
+
+
+Sort a nearly sorted (or K sorted) array
+https://www.geeksforgeeks.org/nearly-sorted-algorithm/
+https://www.codingninjas.com/codestudio/problems/nearly-sorted_982937?leftPanelTab=0
+
+Sort an array in wave form
+https://www.geeksforgeeks.org/sort-array-wave-form-2/
+https://practice.geeksforgeeks.org/problems/wave-array-1587115621/1#
+
+
+1755. Closest Subsequence Sum
+https://leetcode.com/problems/closest-subsequence-sum/
+Cocepts of BItMasking-https://www.youtube.com/watch?v=xFWgZ5DTjFo
+https://leetcode.com/problems/closest-subsequence-sum/discuss/1053751/Java-Detailed-Explanation-%2B-comments-or-Meet-In-the-Middle-or-O-(n-*-2(n2)-or
+
+2035. Partition Array Into Two Arrays to Minimize Sum Difference
+https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/#:~:text=To%20partition%20nums%20%2C%20put%20each,the%20minimum%20possible%20absolute%20difference.&text=Input%3A%20nums%20%3D%20%5B3%2C,7%20%2B%203))%20%3D%202.
+
+2035. Partition Array Into Two Arrays to Minimize Sum Difference
+https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/discuss/1622681/Java-or-Detailed-Explanation-with-Intuition-or-Meet-in-the-Middle-or-Similar-Questions
+https://www.youtube.com/watch?v=UoKGRTIZvM0&t=783s
+
+
+// https://www.interviewcake.com/question/java/word-cloud#when-lookups-cost-o-n
+
+
+
+
+
+
+

@@ -56,6 +56,74 @@ public class TrappingRainwater {
 		return totalSum;
 	}
 
+	public int trap1(int[] height) {
+		int n = height.length;
+		int leftMax = height[0];
+		int rightMax = height[n - 1];
+		int trappedWater = 0;
+
+		int start = 0, end = n - 1;
+		while (start <= end) {
+			// since leftMax is an increasing functiona and rightMax is a decreasing fn
+			if (leftMax > rightMax) {
+				if (height[end] < rightMax) {
+					trappedWater += (rightMax - height[end]);
+				}
+				rightMax = Math.max(rightMax, height[end]);
+				end--;
+			} else {
+				if (height[start] < leftMax) {
+					trappedWater += (leftMax - height[start]);
+				}
+				leftMax = Math.max(leftMax, height[start]);
+				start++;
+			}
+		}
+		return trappedWater;
+	}
+
+	// Tc 3*o(n) doing 3 passes for calculating lMax, rMax and then to get the ans
+	class Solution {
+
+		private int[] findMax(int[] arr, int n, boolean left) {
+			// left max
+			int max = Integer.MIN_VALUE;
+			int[] maxArr = new int[n];
+			if (left) {
+				for (int i = 0; i < n; i++) {
+					maxArr[i] = max;
+					max = Math.max(arr[i], max);
+				}
+
+				// right max
+			} else {
+				for (int i = n - 1; i >= 0; i--) {
+					maxArr[i] = max;
+					max = Math.max(arr[i], max);
+				}
+			}
+			return maxArr;
+		}
+
+		public int trap(int[] height) {
+			int n = height.length;
+
+			int[] leftMax = findMax(height, n, true);
+			int[] rightMax = findMax(height, n, false);
+
+			// find the ans
+			int trappedWater = 0;
+			int minHeight = 0;
+			for (int i = 0; i < n; i++) {
+				minHeight = Math.min(leftMax[i], rightMax[i]);
+				if (height[i] < minHeight) {
+					trappedWater += (minHeight - height[i]);
+				}
+			}
+			return trappedWater;
+		}
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
