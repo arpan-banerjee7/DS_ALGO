@@ -1,0 +1,20 @@
+
+o/1 knapsack-
+// https://codeforces.com/blog/entry/88660
+// https://www.codingninjas.com/codestudio/problems/0-1-knapsack_920542?leftPanelTab=1
+// https://www.interviewbit.com/problems/0-1-knapsack/
+
+Code implemented in local- getting TLE In online submissions but solution is correct
+
+
+
+Last Stone weight II
+https://leetcode.com/problems/last-stone-weight-ii/discuss/1051227/Java-Top-Down-Recursive
+Detailed leetcode discussion my blog- https://leetcode.com/problems/last-stone-weight-ii/discuss/1631347/Java-or-3-sloutions-or-Top-Down-recursive-or-Bottom-up-DP-or-Meet-in-the-middle-or-commented
+gfg- https://www.geeksforgeeks.org/meet-in-the-middle/
+Meet in the middle vs dp vs recursion
+https://www.baeldung.com/cs/subset-of-numbers-closest-to-target
+
+1755. Closest Subsequence Sum
+
+2035. Partition Array Into Two Arrays to Minimize Sum Difference

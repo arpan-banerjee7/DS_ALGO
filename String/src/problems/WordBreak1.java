@@ -11,16 +11,6 @@ import java.util.Set;
 // https://www.techiedelight.com/word-break-problem/
 // https://leetcode.com/problems/word-break/submissions/
 
-/*https://www.youtube.com/watch?v=LmHWIsBQBU4
-https://www.geeksforgeeks.org/word-break-problem-dp-32/
-
-overlapping subsproblems-
-"abcde"
-["a","b","c","d","ab","abc","abcd"]
-
-String s = "myapplemyapplemy";
-		String[] wordDict = {"m", "my", "apple" };*/
-		
 public class WordBreak1 {
 
 	private static boolean isPossible(String s, Set<String> seen, Map<String, Boolean> dp) {

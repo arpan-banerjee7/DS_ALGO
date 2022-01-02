@@ -1,0 +1,62 @@
+KMP algo
+https://www.youtube.com/watch?v=V5-7GzOfADQ
+https://leetcode.com/problems/implement-strstr/discuss/535326/Java-KMP-Solution-O(m%2Bn)-Clean-code
+28. Implement strStr()
+
+1392. Longest Happy Prefix
+https://leetcode.com/problems/longest-happy-prefix/
+
+
+49. Group Anagrams
+// https://leetcode.com/problems/group-anagrams/
+key point here is to form the unique key
+1. sorting
+2. char[]
+3. int[]
+https://leetcode.com/problems/group-anagrams/discuss/1264167/Come-and-see!-Build-the-key-with-int26-more-code-but-easy-to-think-and-write
+
+-------------------------------------------------------LCS-------------------------------------------------------------------------------
+1143. Longest Common Subsequence
+https://leetcode.com/problems/longest-common-subsequence/
+LCS & LPS -- similar classic variation
+
+516. Longest Palindromic Subsequence
+https://leetcode.com/problems/longest-palindromic-subsequence/
+https://www.techiedelight.com/longest-palindromic-subsequence-using-dynamic-programming/
+
+Longest Repeating Subsequence
+https://www.geeksforgeeks.org/longest-repeating-subsequence/
+
+Longest common substring-- dp easier than top down recursion
+718. Maximum Length of Repeated Subarray
+https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+
+5. Longest Palindromic Substring
+https://leetcode.com/problems/longest-palindromic-substring/
+https://www.youtube.com/watch?v=UflHuQj6MVA
+
+139. Word Break
+https://leetcode.com/problems/word-break/
+
+140. Word Break II
+https://leetcode.com/problems/word-break-ii/
+
+Prit word break
+https://www.youtube.com/watch?v=LmHWIsBQBU4
+
+22. Generate Parentheses
+https://leetcode.com/problems/generate-parentheses/
+
+20. Valid Parentheses
+https://leetcode.com/problems/valid-parentheses/
+
+Longest Common Anagram Subsequence
+https://www.geeksforgeeks.org/longest-common-anagram-subsequence/
+check local eclipse for own approaches
+
+1328. Break a Palindrome
+https://leetcode.com/problems/break-a-palindrome/
+https://www.geeksforgeeks.org/make-the-string-lexicographically-smallest-non-palindromic-by-replacing-exactly-one-character/
+
+Make the string lexicographically smallest and non palindromic by swapping of adjacent pair of characters
+https://www.geeksforgeeks.org/make-the-string-lexicographically-smallest-and-non-palindromic-by-swapping-of-adjacent-pair-of-characters/
