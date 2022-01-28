@@ -6,6 +6,7 @@ import java.util.Stack;
 // https://www.youtube.com/watch?v=T5s96ynzArg&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd&index=3 Aditya Verma
 // https://www.techiedelight.com/next-greater-element/ 3rd approach
 
+// Monotonous Decreasing stack
 public class PreviousGreaterElement {
 
 	private static int[] findNextGreaterElements(int[] arr) {

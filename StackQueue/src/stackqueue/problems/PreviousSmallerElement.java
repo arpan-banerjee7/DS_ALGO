@@ -5,6 +5,7 @@ import java.util.Stack;
 // https://www.youtube.com/watch?v=85LWui3FlVk&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd&index=4 Aditya Verma
 // https://www.techiedelight.com/next-greater-element/ 3rd approach
 
+// Monotonous Increasing stack
 public class PreviousSmallerElement {
 
 	private static int[] findPrevSmallerElements(int[] arr) {

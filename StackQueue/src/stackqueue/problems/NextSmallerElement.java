@@ -8,6 +8,8 @@ import java.util.Stack;
 
 // Time Complexity: O(N) 
 // Auxiliary Space: O(N)
+
+// Monotonous Increasing stack
 public class NextSmallerElement {
 
 	private static int[] findNextSmallerElements(int[] arr) {

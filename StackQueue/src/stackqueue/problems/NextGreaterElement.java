@@ -10,6 +10,7 @@ import java.util.Stack;
 
 // Time Complexity: O(N) 
 // Auxiliary Space: O(N)
+// Monotonous Decreasing stack
 public class NextGreaterElement {
 
 	// Function to find the next greater element for each element of the array.
@@ -33,11 +34,11 @@ public class NextGreaterElement {
 	}
 
 	public static void main(String[] args) {
-		long arr[] = { 11, 13, 13, 21, 3 };
+		long arr[] = { 11, 13, 13, 21, 3 }; 
 		int n = arr.length;
 		long[] res = nextGreaterElement(arr, n);
 		for (long l : res) {
-			System.out.print(l + " ");
+			System.out.print(l + " ");// Output- 13 21 21 -1 -1 
 		}
 
 	}
