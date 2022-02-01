@@ -32,6 +32,27 @@ public class StockSpanProblem {
 		return res;
 	}
 
+	//------------------------------------easier version-----------------------------------------------//
+	// same concept as previous greater element
+	// monotonous decreasing stack
+	class StockSpanner {
+		Stack<int[]> st;
+
+		public StockSpanner() {
+			this.st = new Stack<>();
+		}
+
+		public int next(int price) {
+			int span = 1;
+			while (!st.isEmpty() && st.peek()[0] <= price) {
+				span += st.peek()[1];
+				st.pop();
+			}
+			st.push(new int[] { price, span });
+			return span;
+		}
+	}
+
 	public static void main(String[] args) {
 		int[] arr = { 100, 80, 60, 70, 60, 75, 85 };
 

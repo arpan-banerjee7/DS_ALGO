@@ -1,65 +1,60 @@
 package striver.BT;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Queue;
 
 // Bottom View Of Binary Tree- Cut down TC from o(nlogn) to O(n) same as top view, just keep updating the map
 // https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
 
 public class BottomViewOfBT {
-	static Node buildTree(String str) {
+	class Tuple {
+		Node node;
+		int v;
 
-		if (str.length() == 0 || str.charAt(0) == 'N') {
-			return null;
+		Tuple(int v, Node node) {
+			this.v = v;
+			this.node = node;
 		}
+	}
 
-		String ip[] = str.split(" ");
-		// Create the root of the tree
-		Node root = new Node(Integer.parseInt(ip[0]));
-		// Push the root to the queue
+	class Solution {
+		// Function to return a list containing the bottom view of the given tree.
+		public ArrayList<Integer> bottomView(Node root) {
+			// Code here
+			ArrayList<Integer> res = new ArrayList<>();
+			Queue<Tuple> queue = new LinkedList<>();
+			Map<Integer, Integer> map = new HashMap<>();
 
-		Queue<Node> queue = new LinkedList<>();
+			if (root != null) {
+				queue.add(new Tuple(0, root));
+			}
+			// to reduce the TC from o(nlogn) to o(n) avoid using treemap
+			int min = Integer.MAX_VALUE;
 
-		queue.add(root);
-		// Starting from the second element
+			while (!queue.isEmpty()) {
+				Tuple tuple = queue.poll();
+				Node node = tuple.node;
+				int v = tuple.v;
 
-		int i = 1;
-		while (queue.size() > 0 && i < ip.length) {
+				min = Math.min(v, min);
 
-			// Get and remove the front of the queue
-			Node currNode = queue.peek();
-			queue.remove();
+				map.put(v, node.data);
 
-			// Get the current node's value from the string
-			String currVal = ip[i];
-
-			// If the left child is not null
-			if (!currVal.equals("N")) {
-
-				// Create the left child for the current node
-				currNode.left = new Node(Integer.parseInt(currVal));
-				// Push it to the queue
-				queue.add(currNode.left);
+				if (node.left != null) {
+					queue.add(new Tuple(v - 1, node.left));
+				}
+				if (node.right != null) {
+					queue.add(new Tuple(v + 1, node.right));
+				}
 			}
 
-			// For the right child
-			i++;
-			if (i >= ip.length)
-				break;
-
-			currVal = ip[i];
-
-			// If the right child is not null
-			if (!currVal.equals("N")) {
-
-				// Create the right child for the current node
-				currNode.right = new Node(Integer.parseInt(currVal));
-
-				// Push it to the queue
-				queue.add(currNode.right);
+			for (int i = min; map.containsKey(i); i++) {
+				res.add(map.get(i));
 			}
-			i++;
+			return res;
 		}
-
-		return root;
 	}
 }

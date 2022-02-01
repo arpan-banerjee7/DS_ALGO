@@ -1,8 +1,5 @@
 package striver.BST;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /*
 Largest BST in a Binary Tree-
 https://www.youtube.com/watch?v=X0oXMdtUDwo&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=55
@@ -10,7 +7,7 @@ https://www.youtube.com/watch?v=X0oXMdtUDwo&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk
  */
 
 public class LargestBSTInABT {
-	static class Node {
+	class Node {
 		int data;
 		Node left, right;
 
@@ -20,55 +17,50 @@ public class LargestBSTInABT {
 		}
 	}
 
-	static Node buildTree(String str) {
-		// Corner Case
-		if (str.length() == 0 || str.equals('N'))
-			return null;
-		String[] s = str.split(" ");
+	class Tuple {
+		int count;
+		int max;
+		int min;
 
-		Node root = new Node(Integer.parseInt(s[0]));
-		Queue<Node> q = new LinkedList<Node>();
-		q.add(root);
-
-		// Starting from the second element
-		int i = 1;
-		while (!q.isEmpty() && i < s.length) {
-			// Get and remove the front of the queue
-			Node currNode = q.remove();
-
-			// Get the curr node's value from the string
-			String currVal = s[i];
-
-			// If the left child is not null
-			if (!currVal.equals("N")) {
-
-				// Create the left child for the curr node
-				currNode.left = new Node(Integer.parseInt(currVal));
-
-				// Push it to the queue
-				q.add(currNode.left);
-			}
-
-			// For the right child
-			i++;
-			if (i >= s.length)
-				break;
-			currVal = s[i];
-
-			// If the right child is not null
-			if (!currVal.equals("N")) {
-
-				// Create the right child for the curr node
-				currNode.right = new Node(Integer.parseInt(currVal));
-
-				// Push it to the queue
-				q.add(currNode.right);
-			}
-
-			i++;
+		public Tuple(int count, int max, int min) {
+			this.count = count;
+			this.max = max;
+			this.min = min;
 		}
-
-		return root;
 	}
 
+	class Solution {
+
+		private Tuple findLargestBST(Node root) {
+			if (root == null) {
+				Tuple tuple = new Tuple(0, Integer.MIN_VALUE, Integer.MAX_VALUE);
+				return tuple;
+			}
+			if (root.left == null && root.right == null) {
+				return new Tuple(1, root.data, root.data);
+			}
+
+			Tuple tLeft = findLargestBST(root.left);
+			Tuple tRight = findLargestBST(root.right);
+
+			if (root.data > tLeft.max && root.data < tRight.min) {
+				int count = 1 + tLeft.count + tRight.count;
+				int min = Math.min(tLeft.min, root.data);
+				int max = Math.max(root.data, tRight.max);
+				Tuple nextTuple = new Tuple(count, max, min);
+				return nextTuple;
+			}
+			int count = Math.max(tLeft.count, tRight.count);
+			return new Tuple(count, Integer.MAX_VALUE, Integer.MIN_VALUE);
+		}
+
+		// Return the size of the largest sub-tree which is also a BST
+		private int largestBst(Node root) {
+			// Write your code here
+			Solution s = new Solution();
+			Tuple res = s.findLargestBST(root);
+			return res.count;
+
+		}
+	}
 }

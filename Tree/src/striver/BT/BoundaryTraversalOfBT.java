@@ -1,61 +1,77 @@
 package striver.BT;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
 
 // Striver - https://www.youtube.com/watch?v=0ca1nvR0be4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=22
 // https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
 // 878 · Boundary of Binary Tree Lintcode
 
 public class BoundaryTraversalOfBT {
-	static Node buildTree(String str) {
-		// Corner Case
-		if (str.length() == 0 || str.equals('N'))
-			return null;
-		String[] s = str.split(" ");
-
-		Node root = new Node(Integer.parseInt(s[0]));
-		Queue<Node> q = new LinkedList<Node>();
-		q.add(root);
-
-		// Starting from the second element
-		int i = 1;
-		while (!q.isEmpty() && i < s.length) {
-			// Get and remove the front of the queue
-			Node currNode = q.remove();
-
-			// Get the current node's value from the string
-			String currVal = s[i];
-
-			// If the left child is not null
-			if (!currVal.equals("N")) {
-
-				// Create the left child for the current node
-				currNode.left = new Node(Integer.parseInt(currVal));
-
-				// Push it to the queue
-				q.add(currNode.left);
+	class Solution {
+		// check if it is a leaf node
+		private boolean isLeaf(Node node) {
+			if (node.left == null && node.right == null) {
+				return true;
 			}
-
-			// For the right child
-			i++;
-			if (i >= s.length)
-				break;
-			currVal = s[i];
-
-			// If the right child is not null
-			if (!currVal.equals("N")) {
-
-				// Create the right child for the current node
-				currNode.right = new Node(Integer.parseInt(currVal));
-
-				// Push it to the queue
-				q.add(currNode.right);
-			}
-
-			i++;
+			return false;
 		}
 
-		return root;
+		// take the left side first without the leaf nodes
+		private void addLeft(Node node, ArrayList<Integer> res) {
+			Node curr = node.left;
+			while (curr != null) {
+				if (!isLeaf(curr)) {
+					res.add(curr.data);
+				}
+				if (curr.left != null) {
+					curr = curr.left;
+				} else {
+					curr = curr.right;
+				}
+			}
+		}
+
+		private void addLeaf(Node node, ArrayList<Integer> res) {
+			if (node == null) {
+				return;
+			}
+
+			addLeaf(node.left, res);
+			if (isLeaf(node)) {
+				res.add(node.data);
+			}
+			addLeaf(node.right, res);
+		}
+
+		// take the right side first without the leaf nodes
+		private void addRight(Node node, ArrayList<Integer> res) {
+			Node curr = node.right;
+			ArrayList<Integer> temp = new ArrayList<>();
+			while (curr != null) {
+				if (!isLeaf(curr)) {
+					temp.add(curr.data);
+				}
+				if (curr.right != null) {
+					curr = curr.right;
+				} else {
+					curr = curr.left;
+				}
+			}
+			for (int i = temp.size() - 1; i >= 0; i--) {
+				res.add(temp.get(i));
+			}
+		}
+
+		ArrayList<Integer> boundary(Node node) {
+			ArrayList<Integer> res = new ArrayList<>();
+
+			if (!isLeaf(node)) {
+				res.add(node.data);
+			}
+			addLeft(node, res);
+			addLeaf(node, res);
+			addRight(node, res);
+			return res;
+		}
 	}
 }

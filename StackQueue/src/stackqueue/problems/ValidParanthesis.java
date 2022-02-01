@@ -28,6 +28,34 @@ public class ValidParanthesis {
 		return stack.empty();
 	}
 
+	//------------------------------------------------------ easier version-----------------------------------------//
+	
+	// push the corresponding closing braces on stack when you encounter an opening
+	// bracket
+	// when you encounter a closing bracket, check if the stack is empty or if the
+	// top of the stack has the corresponding closing bracket which we pushed
+	// earlier
+	// if either of the above case is false its false
+	// at last check if the stack is empty
+
+	class Solution {
+		public boolean isValid(String s) {
+			Stack<Character> st = new Stack<>();
+			for (char c : s.toCharArray()) {
+				if (c == '(') {
+					st.push(')');
+				} else if (c == '{') {
+					st.push('}');
+				} else if (c == '[') {
+					st.push(']');
+				} else if (st.isEmpty() || st.pop() != c) {
+					return false;
+				}
+			}
+			return st.isEmpty();
+		}
+	}
+
 	public static void main(String[] args) {
 		String expr = "([{}])";
 

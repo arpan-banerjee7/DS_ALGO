@@ -8,6 +8,7 @@ Max width of a binary tree- cool trick to prevent overflow- https://leetcode.com
 https://www.youtube.com/watch?v=ZbybYvcVLks&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=29
  */
 
+// 2*1+1 and 2*1+2 logic, substract min value at evry stage to prevent overflow
 public class MaxWidthOfBT {
 	static class Tuple {
 		TreeNode node;
