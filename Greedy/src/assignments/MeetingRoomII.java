@@ -25,6 +25,8 @@ Tags
 ====================================================================================
 ====================================================================================
 */
+import java.util.Collections;
+import java.util.PriorityQueue;
 
 // https://www.interviewbit.com/problems/meeting-rooms/
 // intuition- https://www.youtube.com/watch?v=FdzJmTCVyJU
@@ -61,6 +63,28 @@ public class MeetingRoomII {
 			return rooms;
 		}
 
+	}
+
+	public class Solution1 {
+		public int solve(ArrayList<ArrayList<Integer>> A) {
+			int n = A.size();
+			Collections.sort(A, (a, b) -> a.get(0) - b.get(0));
+			PriorityQueue<ArrayList<Integer>> minHeap = new PriorityQueue<>((a, b) -> a.get(1) - b.get(1));
+
+			minHeap.add(A.get(0));
+			for (int i = 1; i < n; i++) {
+				// new meeting start >= earliest ending meeting till now
+				ArrayList<Integer> earliestEndMeeting = minHeap.poll();
+				if (A.get(i).get(0) >= earliestEndMeeting.get(1)) {
+					// update the end time
+					earliestEndMeeting.set(1, A.get(i).get(1));
+				} else {
+					minHeap.add(A.get(i));
+				}
+				minHeap.add(earliestEndMeeting);
+			}
+			return minHeap.size();
+		}
 	}
 
 }
