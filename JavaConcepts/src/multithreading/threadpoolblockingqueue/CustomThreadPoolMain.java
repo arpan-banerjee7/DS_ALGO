@@ -1,9 +1,9 @@
-package multithreading.threadpool;
+package multithreading.threadpoolblockingqueue;
 
 public class CustomThreadPoolMain {
 
 	public static void main(String[] args) {
-		CustomThreadPool threadPool = new CustomThreadPool(5);
+		CustomThreadPool threadPool = new CustomThreadPool(5, 10);
 		for (int i = 0; i < 10; i++) {
 			int taskNo = i;
 			// add tasks in queue of threadPool, it expects a Runnable instance
@@ -14,8 +14,8 @@ public class CustomThreadPoolMain {
 			// threadPool.execute(new CustomTask());
 		}
 
-//		threadPool.waitUntilAllTasksOver();
-//		threadPool.doStop();
+		threadPool.waitUntilAllTasksOver();
+		threadPool.doStop();
 
 	}
 
