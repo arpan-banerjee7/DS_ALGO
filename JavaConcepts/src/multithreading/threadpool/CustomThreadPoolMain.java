@@ -14,8 +14,8 @@ public class CustomThreadPoolMain {
 			// threadPool.execute(new CustomTask());
 		}
 
-//		threadPool.waitUntilAllTasksOver();
-//		threadPool.doStop();
+		threadPool.waitUntilAllTasksOver();
+		threadPool.doStop();
 
 	}
 

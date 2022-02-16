@@ -1,13 +1,138 @@
 package problems;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 // https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/
 // https://leetcode.com/problems/design-hashmap/
 
+class HashNode {
+	int key;
+	int value;
+	int hashCode;
+	HashNode next;
+
+	HashNode(int key, int value, int hashCode) {
+		this.key = key;
+		this.value = value;
+		this.hashCode = hashCode;
+	}
+}
+
+class MyHashMap {
+	List<HashNode> bucketArray;
+	int bucketSize;
+
+	/** Initialize your data structure here. */
+	public MyHashMap() {
+		this.bucketArray = new ArrayList<>();
+		this.bucketSize = 16;
+
+		// Create empty chains
+		for (int i = 0; i < bucketSize; i++)
+			bucketArray.add(null);
+	}
+
+	private int hashCode(int key) {
+		return Integer.hashCode(key);
+	}
+
+	private int getBucketIndex(int key) {
+		int idx = hashCode(key) % bucketSize;
+		return idx < 0 ? idx * -1 : idx;
+	}
+
+	/** value will always be non-negative. */
+	public void put(int key, int value) {
+		int hashCode = hashCode(key);
+		int bucketIndex = getBucketIndex(key);
+
+		// check if already present
+		// get the head of te=he ll in that bucket
+		HashNode head = bucketArray.get(bucketIndex);
+		while (head != null) {
+			if (head.key == key) {
+				head.value = value;
+				return;
+			}
+			head = head.next;
+		}
+
+		// inserting at the begining of the LL, so reseting the head pointer
+		head = bucketArray.get(bucketIndex);
+		HashNode newNode = new HashNode(key, value, hashCode);
+		newNode.next = head;
+		// till now the bucket array has the reference to the head, which is pointing
+		// to the node already present
+
+		// this will make the bucket at that index to point at the new node, thereby
+		// changing the head
+		bucketArray.set(bucketIndex, newNode);
+	}
+
+	/**
+	 * Returns the value to which the specified key is mapped, or -1 if this map
+	 * contains no mapping for the key
+	 */
+	public int get(int key) {
+		int hashCode = hashCode(key);
+		int bucketIndex = getBucketIndex(key);
+
+		HashNode head = bucketArray.get(bucketIndex);
+		while (head != null) {
+			if (head.key == key) {
+				return head.value;
+			}
+			head = head.next;
+		}
+		// key not found
+		return -1;
+
+	}
+
+	/**
+	 * Removes the mapping of the specified value key if this map contains a mapping
+	 * for the key
+	 */
+	public void remove(int key) {
+		int hashCode = hashCode(key);
+		int bucketIndex = getBucketIndex(key);
+
+		HashNode head = bucketArray.get(bucketIndex);
+		HashNode prev = null;
+
+		// after this, if key is founf head will point to the node having the key
+		// and prev will point to a node before it
+		while (head != null) {
+			if (head.key == key) {
+				break;
+			}
+			prev = head;
+			head = head.next;
+		}
+		if (head == null) {
+			return;
+		}
+		// key found, now de-link that node
+		if (prev != null) {
+			prev.next = head.next;
+		} else { // head has the key
+			bucketArray.set(bucketIndex, head.next);
+		}
+
+	}
+}
+
+/**
+ * Your MyHashMap object will be instantiated and called as such: MyHashMap obj
+ * = new MyHashMap(); obj.put(key,value); int param_2 = obj.get(key);
+ * obj.remove(key);
+ */
+
+//--------------------------------------------------- full implementation not required--------------------------------//
 // A node of chains
-class HashNode<K, V> {
+/*class HashNode<K, V> {
 	K key;
 	V value;
 	final int hashCode;
@@ -178,4 +303,4 @@ class DesignHashMap<K, V> {
 		System.out.println(map.size());
 		System.out.println(map.isEmpty());
 	}
-}
+}*/

@@ -19,31 +19,35 @@ public class RunnablePool implements Runnable {
 		Runnable runnable;
 		currThread = Thread.currentThread();
 		while (!isStopped) {
-			synchronized (taskQueue) {
-				// if there is no task in the queue then this method is blocked indefinitely
-				while (taskQueue.isEmpty()) {
-					try {
-						taskQueue.wait();
-					} catch (InterruptedException e) {
-
+			try {
+				synchronized (taskQueue) {
+					// if there is no task in the queue then this method is blocked indefinitely
+					while (taskQueue.isEmpty()) {
+						try {
+							taskQueue.wait();
+						} catch (InterruptedException e) {
+							throw e;
+						}
 					}
+					runnable = (Runnable) taskQueue.removeFirst();
 				}
-				runnable = (Runnable) taskQueue.removeFirst();
+				runnable.run();
+			} catch (InterruptedException e) {
+
 			}
-			runnable.run();
 		}
 	}
 
-//	// made this synchronized to make sure the value of isStopped is written back to
-//	// the memory and the updated data is visible to the threads
-//	public void stop() {
-//		synchronized (taskQueue) {
-//			isStopped = true;
-//			/// breaks the thread out the removeFirst() call
-//			currThread.interrupt();
-//
-//		}
-//
-//	}
+	// made this synchronized to make sure the value of isStopped is written back to
+	// the memory and the updated data is visible to the threads
+	public void stop() {
+		synchronized (taskQueue) {
+			isStopped = true;
+			/// breaks the thread out the removeFirst() call
+			currThread.interrupt();
+
+		}
+
+	}
 
 }

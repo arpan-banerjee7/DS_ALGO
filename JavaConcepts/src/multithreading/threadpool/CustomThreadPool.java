@@ -26,31 +26,28 @@ public class CustomThreadPool {
 	public void execute(Runnable r) {
 		synchronized (taskQueue) {
 			taskQueue.addLast(r);
-			taskQueue.notify();
+			taskQueue.notifyAll();
 		}
 	}
 
-//	public void doStop() {
-//		synchronized (taskQueue) {
-//			for (RunnablePool worker : workers) {
-//				worker.stop();
-//			}
-//		}
-//
-//	}
-//
-//	public void waitUntilAllTasksOver() {
-//		synchronized (taskQueue) {
-//			while (!taskQueue.isEmpty()) {
-//				try {
-//					taskQueue.wait();
-//				} catch (InterruptedException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
-//			}
-//		}
-//
-//	}
+	public void doStop() {
+		synchronized (taskQueue) {
+			for (RunnablePool worker : workers) {
+				worker.stop();
+			}
+		}
+
+	}
+
+	public void waitUntilAllTasksOver() {
+		while (!taskQueue.isEmpty()) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+	}
 
 }
