@@ -1,0 +1,25 @@
+Extra question slh
+
+282. Expression Add Operators
+https://leetcode.com/problems/expression-add-operators/
+Recursive functions returning value which can be tricky.
+
+2170. Minimum Operations to Make the Array Alternating
+https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/
+
+116. Populating Next Right Pointers in Each Node
+https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+extra space- https://www.youtube.com/watch?v=yFTr_EnlERM naresh gupta
+o(1) space- https://www.youtube.com/watch?v=uI5CB32O_uo ayushi sharma
+
+1567. Maximum Length of Subarray With Positive Product
+https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/
+https://www.youtube.com/watch?v=bFer5PdsgpY brute force
+o(n) https://www.youtube.com/watch?v=vmY9ctncXQI md fraz
+
+152. Maximum Product Subarray
+https://leetcode.com/problems/maximum-product-subarray/
+// o(n) solution, keep track of max and min at each step- trick to remember
+// return the max
+// https://www.youtube.com/watch?v=lXVy6YWFcRM Neetcode
+// test case dry run- [-2,0,-1,5,6]
