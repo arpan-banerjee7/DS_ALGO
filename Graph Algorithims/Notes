@@ -105,7 +105,18 @@ PRIM's ALGO-- TC O(E log V)/ bad implementation o(v^2)
 			
 			              ******************************************
 Single-source shortest path
-Dijkstra-- done
+
+normal algo does not use priority queue- we can find shortets path in a grapgh with unit weights. BFS kind of traversal, with a smiple check, its BFS so it ensures that each node we visit, we visit through the shortest path
+https://stackoverflow.com/questions/14784753/shortest-path-dfs-bfs-or-both#:~:text=I%20know%20it%20late%20for%20the%20party%20here%20but.%20There%20are%20several%20differences%20between%20DFS%20and%20BFS%20(short
+
+Dijkstra-- used to find the shortest path in undirected graph with arbitary weights.
+If we do not use Priority queue here, then in case of arbitary weights with the simple algo, we might have to revisit a node, 
+since normal BFS won t guarente the shortest path.
+
+The priority queue selects the next vertex so as to (eventually) ensure shortest paths in a weighted graph. 
+If you use a FIFO queue instead, you will not be able to account for arbitrary edge weights. This will essentially be 
+breadth-first search which only guarantees finding shortest paths in unweighted graphs. The use of a priority queue comes 
+at the cost of greater runtime - usually by a log factor.
 
 BELLMAN FORD - Dijkstra does not work for -ve edge wieght cycle, bellman ford doesn not work as well
 but bellman ford can detect -ve edge weight cyle. so save us from infinte loop. Even slight modification of dijkstra can do the same job.
