@@ -1,0 +1,44 @@
+Microsoft
+
+Minimum sum partition
+https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317/1/#
+1049. Last Stone Weight II
+https://leetcode.com/problems/last-stone-weight-ii/
+top down- check my other submissions/ article on leetcode
+
+2.Prerequisite Tasks (Similar to Question of Modern Park)
+https://practice.geeksforgeeks.org/problems/prerequisite-tasks/1/
+207. Course Schedule
+https://leetcode.com/problems/course-schedule/
+to do- course schedule 2
+
+3. Alien Dictionary
+https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
+https://leetcode.com/problems/verifying-an-alien-dictionary/
+
+Possible Words From Phone Digits
+https://practice.geeksforgeeks.org/problems/possible-words-from-phone-digits-1587115620/1/
+17. Letter Combinations of a Phone Number
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+//Ref: https://www.youtube.com/watch?v=0snEunUacZY Neetcode
+//TC = O(n.4^n)  n = number of digits in the string
+
+7.Unit Area of largest region of 1's 
+https://practice.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1/#
+695. Max Area of Island
+https://leetcode.com/problems/max-area-of-island/
+
+related questions- returning value from recursion
+200. Number of Islands
+https://leetcode.com/problems/number-of-islands/
+https://leetcode.com/problems/expression-add-operators/
+
+9.Count Number of SubTrees having given Sum 
+https://practice.geeksforgeeks.org/problems/count-number-of-subtrees-having-given-sum/1/
+
+337. House Robber I, II, III
+https://leetcode.com/problems/house-robber-iii/
+https://www.youtube.com/watch?v=nHR8ytpzz7c Neetcode
+
+754. Reach a Number-- do the recursive solution
+https://leetcode.com/problems/reach-a-number/
