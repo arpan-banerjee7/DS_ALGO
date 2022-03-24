@@ -1,7 +1,12 @@
 package assignments;
 // 55. Jump Game
+
+import java.util.HashMap;
+
 // https://leetcode.com/problems/jump-game/
 // https://www.youtube.com/watch?v=Pk128gC_sdw Same as leetcode 1326
+
+import java.util.Map;
 
 /*[2,0,0]
 same as min taps to water garden
@@ -36,4 +41,31 @@ public class JumpGame {
 
 	}
 
+	// DP appproach Sahil
+	// TC - o(n) * max(nums[i])
+	class Solution {
+		private boolean isPossible(int[] nums, int idx, Map<Integer, Boolean> map) {
+			if (idx >= nums.length - 1)
+				return true;
+			if (nums[idx] == 0)
+				return false;
+
+			if (map.containsKey(idx))
+				return map.get(idx);
+
+			for (int i = 1; i <= nums[idx]; i++) {
+				if (isPossible(nums, idx + i, map)) {
+					return true;
+				}
+			}
+
+			map.put(idx, false);
+			return false;
+		}
+
+		public boolean canJump(int[] nums) {
+			Map<Integer, Boolean> map = new HashMap<>();
+			return isPossible(nums, 0, map);
+		}
+	}
 }
