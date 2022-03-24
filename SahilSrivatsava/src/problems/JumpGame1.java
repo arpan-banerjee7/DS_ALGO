@@ -1,4 +1,4 @@
-package dp.unboundedknapsack;
+package problems;
 
 import java.util.HashMap;
 import java.util.Map;
