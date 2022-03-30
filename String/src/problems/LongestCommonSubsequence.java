@@ -9,6 +9,9 @@ LCS & LPS -- similar classic variation
 // https://leetcode.com/problems/longest-common-subsequence/
 // https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
 
+// TC- 2^min(m,n))
+// Space min(m,n)
+
 public class LongestCommonSubsequence {
 	private static int findLcs(String s1, String s2, int x, int y, int[][] dp) {
 		if (x == 0 || y == 0) {

@@ -5,7 +5,7 @@ package assignments;
 // Similar questions jump game 1, jump game 2
 
 public class MinTapsToWaterAGarden {
-	public int minTaps(int n, int[] ranges) {
+	public static int minTaps(int n, int[] ranges) {
 		// we need to find a tap which can water from 0
 		int min = 0; // garden starts from 0
 		int max = 0;
@@ -35,6 +35,8 @@ public class MinTapsToWaterAGarden {
 	}
 
 	public static void main(String[] args) {
+		int[] ranges= {3,2,1,1,0,0};
+		System.out.println(minTaps(5, ranges));
 		/*Input: n = 5, ranges = [3,4,1,1,0,0]
 				Output: 1
 				Explanation: The tap at point 0 can cover the interval [-3,3]
