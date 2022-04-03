@@ -1,8 +1,8 @@
-package dp.knapsack;
+package dp.boundedknapsack;
 // https://leetcode.com/problems/target-sum/
 
 // exactly same as count number of subsets with given diff
-public class TragetSum {
+public class TargetSum {
 
 	public static int findTargetSumWays(int[] nums, int target) {
 		int n = nums.length;
