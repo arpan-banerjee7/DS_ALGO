@@ -23,7 +23,7 @@ public class MakeBTFollowChildrenSumProperty {
 		int leftChild = root.left != null ? root.left.data : 0;
 		int rightChild = root.right != null ? root.right.data : 0;
 		if (leftChild + rightChild >= root.data) {
-			// root.data=leftChild+rightChild;
+			root.data = leftChild + rightChild;
 		} else {
 			if (root.left != null) {
 				root.left.data = root.data;
@@ -33,6 +33,31 @@ public class MakeBTFollowChildrenSumProperty {
 			}
 		}
 
+		changeTree(root.left);
+		changeTree(root.right);
+
+		int left = root.left != null ? root.left.data : 0;
+		int right = root.right != null ? root.right.data : 0;
+		root.data = left + right;
+
+	}
+
+	public static void changeTree_without_addingrootdata_while_going_down(BinaryTreeNode<Integer> root) {
+		// Write your code here.
+		if (root == null || (root.left == null && root.right == null)) {
+			return;
+		}
+		int leftChild = root.left != null ? root.left.data : 0;
+		int rightChild = root.right != null ? root.right.data : 0;
+
+		if (leftChild + rightChild < root.data) {
+			if (root.left != null) {
+				root.left.data = root.data;
+			}
+			if (root.right != null) {
+				root.right.data = root.data;
+			}
+		}
 		changeTree(root.left);
 		changeTree(root.right);
 

@@ -7,47 +7,49 @@ package striver.BT;
 // To DO- fully correct sol not found, few edge cases failing]
 
 public class MaximumPathSumFromLeafToleaf {
-	int maxDiameter=Integer.MIN_VALUE;
-    private int findHeight(Node root){
-        if(root==null){
-            return 0;
-        }
-        if(root.left==null && root.right==null){
-            return root.data;
-        }
-        int left=findHeight(root.left);
-        int right=findHeight(root.right);
-        
-        //do this only when both left and right are not null
-        /*          2
-                4       1
-            7       10
-        n       -3
-        
-        */
-        
-        // this also solves this problem, max sum already has a
-        // bigger value for non leaf nodes summation
-        
-        /*      -10
-            -1          0
-        3
-        */
-        int temp=0;
-        if(root.left!=null && root.right!=null){
-            temp=Math.max(left,right)+root.data;
-             maxDiameter=Math.max(maxDiameter,left+right+root.data);
-        }else{
-            temp=root.left!=null? left+root.data : right+root.data;
-        }
-        
-        return temp; // explore other nodes to find max if present;
-    }
-    int maxPathSum(Node root)
-    { 
-        // code here
-        findHeight(root);
-        return maxDiameter;
-        
-    } 
+
+	Node setTree(Node root) {
+
+		Node temp = new Node(0);
+		// if tree is left most
+		if (root.right == null) {
+			root.right = temp;
+		} else { // if tree is right most
+			root.left = temp;
+		}
+
+		return root;
+	}
+
+	int maxSum = Integer.MIN_VALUE;
+
+	private int getMaxSum(Node root) {
+		if (root == null)
+			return 0;
+
+		int left = getMaxSum(root.left);
+		int right = getMaxSum(root.right);
+
+		if (root.left == null && root.right != null)
+			left = Integer.MIN_VALUE;
+		if (root.right == null && root.left != null)
+			right = Integer.MIN_VALUE;
+
+		int temp = Math.max(left, right) + root.data;
+
+		if (root.left != null && root.right != null)
+			maxSum = Math.max(maxSum, (left + right + root.data));
+		return temp;
+
+	}
+
+	int maxPathSum(Node root) {
+		// this is in case the head node is leaf, like there is no left leaf only right
+		// leaf is there
+		if (root.left == null || root.right == null) {
+			root = setTree(root);
+		}
+		getMaxSum(root);
+		return maxSum;
+	}
 }

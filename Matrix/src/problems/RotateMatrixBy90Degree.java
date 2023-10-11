@@ -5,7 +5,34 @@ package problems;
 // https://leetcode.com/problems/rotate-image/
 
 public class RotateMatrixBy90Degree {
+	public static void rotate1(int[][] matrix) {
+		int n = matrix.length;
+		// transpose
+		for (int i = 0; i < n; i++) {
+			for (int j = i; j < n; j++) {
+				int temp = 0;
+				temp = matrix[i][j];
+				matrix[i][j] = matrix[j][i];
+				matrix[j][i] = temp;
+			}
+		}
+		// reverse each row
+		int start = 0;
+		int end = n - 1;
+		for (int row = 0; row < n; row++) {
+			start = 0;
+			end = n - 1;
+			while (start < end) {
+				int temp = matrix[row][start];
+				matrix[row][start] = matrix[row][end];
+				matrix[row][end] = temp;
+				start++;
+				end--;
+			}
+		}
+	}
 
+/*
 	// swap layer by layer
 	public static void rotate(int[][] matrix) {
 		int n = matrix.length;
@@ -49,10 +76,10 @@ public class RotateMatrixBy90Degree {
 		}
 	}
 
+	*/
 	public static void main(String[] args) {
-		int matrix[][]= { {1,2,3}, {4,5,6}, {7,8,9} };
-		rotate(matrix);
+		int matrix[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		rotate1(matrix);
 	}
-
 
 }
