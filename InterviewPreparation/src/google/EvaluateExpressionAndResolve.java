@@ -59,7 +59,10 @@ public class EvaluateExpressionAndResolve {
             char variable = entry.getKey();
             int count = entry.getValue();
             if (count > 0) {
-                finalResult.append("+").append(variable);
+                for (int i = 0; i < count; i++) {
+                    finalResult.append("+");
+                    finalResult.append(variable);
+                }
             } else if (count < 0) {
                 finalResult.append("-").append(variable);
             }
@@ -75,8 +78,15 @@ public class EvaluateExpressionAndResolve {
 
     public static void main(String[] args) {
         String expression1 = "(a-(b+c-(c+d))+d)";//(a-(b+c-c-d)+d) // (a-b-c+c+d+d)
-
-        System.out.println(simplify(expression1));  // Output: "a-b-c-c"
+        System.out.println(simplify(expression1));  // Output: "a-b+d+d"
+        String exp2="(-a+b)";
+        System.out.println(simplify(exp2));  // Output: "-a+b"
+        String exp3="-a+b";
+        System.out.println(simplify(exp3));  // Output: "-a+b"
+        String exp4="";
+        System.out.println(simplify(exp4));  // Output: ""
+        String exp5="a+a+b";
+        System.out.println(simplify(exp5));  // Output: "a+a+b"
 
     }
 }

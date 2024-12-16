@@ -1,0 +1,18 @@
+Linkedin
+
+DSAhttps://leetcode.com/problems/max-stack/description/ ——Premiumhttps://leetcode.com/problems/find-the-celebrity/description/ ——Premiumhttps://leetcode.com/problems/nested-list-weight-sum/ -premium364. Nested List Weight Sum II— premium366. Find Leaves of Binary Tree —premium1650. Lowest Common Ancestor of a Binary Tree III - Premium
+
+380. Insert Delete GetRandom O(1)381. Insert Delete GetRandom O(1) - Duplicates allowedhttps://leetcode.com/problems/maximum-product-subarray/description/432. All O`one Data Structure658. Find K Closest Elements211. Design Add and Search Words Data Structure636. Exclusive Time of Functions
+
+9945590655Blogs-https://www.uber.com/en-IN/blog/job-counting-at-scale/?utm_campaign=how-uber-tracks-billions-of-trips&utm_medium=referral&utm_source=blog.quastor.org
+
+
+
+HLD1)Top k heavy hittersDesign a system where we can see top third-party articles shared in LinkedIn.https://www.youtube.com/watch?v=kx-XDoPjoHw&t=1220shttps://www.hellointerview.com/learn/system-design/answer-keys/top-kQ: LinkedIn users can share posts with each other and externally (outside of LinkedIn). Design a system that tracks the top N shared posts by the following time-intervals; 1 minute, 1 hour, and 1 day.Get requirements, assumptions, constraints, etc.What is this system expected to do? Are all of the events generated for us? Are we only building the ingestion engine + DB for queries?What is the number of users/posts/activity?Do we care more about accuracy or speed of metrics?High-LevelWhat does the events look like? How do we store it? How do we process it in the DB?Do we want pre-process before into DB? Or let aggregation engine perform the computation during query time?Low-LevelTalked about all the tables in the DBTalked about how do we store the events in the DB.Talked about how will the aggregation engine query for these resultsTalked about the API calls that will access the DBTalked about the amount of read/write ratiosOverall: Felt good, interviewer was satisfied with answers.https://leetcode.com/discuss/interview-question/1951688/linkedin-senior-swe-onsite-usa-passed
+
+
+2)Metrics Aggregation System.Was asked to build a system like newRelic/Splunk where logs and metrics need to collected and stored and post that need to make an alert and visualization system. More focus was on the metrics collection and how will we be storing so that query on basis of time and keyword can be optimised.https://leetcode.com/discuss/interview-question/4742052/LinkedIn-or-Senior-Software-Engineer-or-Bangalore-or-2024-or-Reject/
+
+
+
+Interview Exp-https://leetcode.com/discuss/interview-question/1951688/linkedin-senior-swe-onsite-usa-passed

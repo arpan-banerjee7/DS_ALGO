@@ -1,0 +1,2000 @@
+LHack
+
+ https://leetcode.com/twitch_tv_qiqi_impact/
+
+
+1 thousand =  10^3 = 1000 							= 1 KB
+1 Million = 10^6 = 1000 * 1000 						= 1 MB = 1000 kB
+1 Billion = 10^9 = 1000 * 1000 * 1000 				= 1 GB = 1000 MB
+1 Trillion = 10^12 = 1000 * 1000 * 1000 * 1000			= 1 TB = 1000 GB
+1 Quadrillion = 10^15								= 1 PB = 1000 TB 
+9631691275 —
+Binary Number addition, sub, mul and division- https://www.youtube.com/watch?v=-f6fjBhu8eA
+
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————
+Technology
+
+How the web works?
+
+Your system(type domain name) ->  your router(wifi/lan) -> ISP(Ji/Airtel) -> DNS (root-level/top level etc ->returns server IP address
+You make another request with IP address to get the desired website/data from server.
+
+World is connected both wired and wireless.
+Your ISP has a powerful router in your locality, from there it distributes to various houses, every connection does not come directly from ISP.
+
+Various continents and countries are connected to each other using optical fibres under the sea.
+
+Now digging dipper how data from server flows to ur machine
+Your machine is connected to your router, which is connected to some local ISP providers like jio/act/hathway etc, then it is connected to Regional ISP(managed by government, canblock domains)----->
+
+# Memcached Learning
+Memcached Architecture- Hussein Nasser
+https://youtu.be/NCePGsRZFus
+https://medium.com/@SkyscannerEng/journey-to-the-centre-of-memcached-b239076e678a
+Scaling Memcaced at Facebook
+https://youtu.be/m4_7W4XzRgk
+Memcaced SpringBoot
+https://youtu.be/CBHVrdlvCTE
+https://www.quora.com/How-does-a-Memcache-cluster-work-Say-Ive-5-nodes-in-my-cluster-and-I-issue-a-multi-get-Further-assume-that-size-of-response-of-multi-get-is-very-large
+See chatgpt SQL chats
+
+#Multithreading
+Happens before guarantee
+https://www.geeksforgeeks.org/happens-before-relationship-in-java/
+Sync vs lock
+https://stackoverflow.com/questions/4201713/synchronization-vs-lock
+
+# JAVA 8 concepts
+https://stackoverflow.com/questions/48183999/what-is-the-difference-between-putifabsent-and-computeifabsent-in-java-8-map
+
+
+# Health Check Endpoint Migration Uber HLD
+https://www.youtube.com/watch?v=akSbpOZ1dFA
+
+# Design a real time dashboard showing the most played songs,  Top K Trending Hashtags
+https://leetcode.com/discuss/interview-question/system-design/243604/Design-a-real-time-dashboard-showing-the-most-played-songs
+https://mecha-mind.medium.com/system-design-top-k-trending-hashtags-4e12de5bb846
+https://medium.com/p/76ab433d93de/edit
+https://www.youtube.com/watch?v=kx-XDoPjoHw
+
+# Map Reduce
+https://www.youtube.com/watch?v=cHGaQz0E7AU
+https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
+Real world examples-
+https://www.youtube.com/watch?v=2sZ2M4gM-Kc
+
+
+
+
+# SQL
+Subqueries
+https://www.youtube.com/watch?v=nJIEIzF7tDw
+leetcode, hackerrank practice
+
+
+# Docker & Kubernetes
+Secret management
+https://stackoverflow.com/questions/73822421/where-does-kubectl-create-secret-generic-name-from-literal-key1-value1-sav
+https://snyk.io/blog/best-practices-for-kubernetes-secrets-management/
+
+
+# Consistent Hashing
+https://www.toptal.com/big-data/consistent-hashing
+
+
+
+Cassandra- https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/types-of-databases
+
+
+
+# Efficient querying on the data lake, avro format, parquet format, GRAB engineering blog
+https://engineering.grab.com/enabling-near-realtime-data-analytics?utm_source=blog.quastor.org&utm_medium=newsletter&utm_campaign=the-architecture-of-grab-s-data-lake
+
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————
+LLD
+Difficult to follow lld codes by Gaurav sen- https://github.com/InterviewReady/Low-Level-Design/blob/main/rate-limiter/src/test/java/RateLimitTest.java
+Anomaly- Udit aggarwal LLD- https://github.com/anomaly2104/anomaly2104
+Tech granth LLD- https://github.com/TheTechGranth/thegranths/blob/master/src/main/java/DesignPatterns/Decorator/Caramel.java
+
+Shadow Bird design patterns- https://github.com/shabbirdwd53/design_patterns/blob/main/observer/src/main/java/com/dailycodebuffer/observer/NewsAgency.java
+
+
+# Rate Limiter
+https://youtu.be/SgEDKN7ZjMw?si=TIV3uitlP-ghTZm9
+https://youtu.be/X3G8gdh9GKE?si=rjruSZd2zit3TiUr
+https://youtu.be/nxraKcWpBvs?si=CGzULaZOOH29sRsZ
+https://youtu.be/X5daFTDfy2g?si=MioJL4jFQ-pAB7pN
+easy to understand-Better Dev With Anubhav
+https://www.youtube.com/watch?v=PJ-c0QI-QCk&t=756s
+rate limiter - LLD - https://github.com/arpan-banerjee7/system-design-notes/tree/main/LLD/src/atlassian/ratelimiter/tokenbucket ——> GITHUB
+for hld see educative
+
+
+# Movie booking system
+// Udit aggarwal youtube
+https://www.youtube.com/watch?v=WwNw6WWTX70
+https://varunkruthiventi.medium.com/distributed-locking-with-redis-af4e7d80b503
+
+
+# Other references, including HLD
+https://www.youtube.com/watch?v=qsGcfVGvFSs&t=1s
+
+# Messaging/chat application/ SLACK
+https://www.youtube.com/watch?v=Nt_gWiPMzNM&t=1s
+https://www.reddit.com/r/Database/comments/wvrpc4/database_schema_for_private_chat_and_group_chat/
+
+
+
+# Online Judge/ coding contest
+https://medium.com/@saisandeepmopuri/system-design-online-judge-with-data-modelling-40cb2b53bfeb
+https://medium.com/@yashbudukh/building-a-remote-code-execution-system-9e55c5b248d6
+
+https://github.com/budukhyash/remote-code-execution-engine
+https://documenter.getpostman.com/view/11156949/Szt8fAgW?version=latest#f60299e5-7f92-49bc-a6d4-d04410ef3175
+
+
+# snake and ladder-
+https://www.youtube.com/watch?v=UYb3DWyZ7-o
+
+# parking lot-
+ https://drive.google.com/file/d/1cDLJQA4_RiqE5d2cCekhpTuVfLDnT_o0/view
+
+
+
+# Association (Composition(string-has-a) vs Aggregation(weak-has-a))
+https://stackoverflow.com/questions/885937/what-is-the-difference-between-association-aggregation-and-composition
+https://opensourceforgeeks.blogspot.com/2014/11/difference-between-association.html
+
+# has-a vs  uses-a vs is-a
+https://www.scientecheasy.com/2021/02/class-relationships-in-java.html/#google_vignette
+
+# unidirectional vs bi-directional relationships in java and hibernate
+https://www.baeldung.com/jpa-hibernate-associations#:~:text=Unidirectional%20and%20bidirectional%20associations%20in%20object%2Doriented%20programming%20differ%20in,a%20relationship%20in%20both%20directions
+
+# Food delivery, zomato sqiggy
+https://github.com/mayankbansal93/lld-food-delivery-zomato-swiggy/tree/origin/master
+https://github.com/ashishps1/awesome-low-level-design/blob/main/problems/food-delivery-service.md
+
+# Design in-memory file system UBER
+https://leetcode.com/discuss/interview-experience/2716244/Uber-LLD
+https://algo.monster/liteproblems/588
+https://medium.com/root-node/design-in-memory-file-system-96ee6c484616
+
+
+# Cult fit, fitness tracking application, set goals, track activities and nutrition
+DB schema
+https://www.geeksforgeeks.org/how-to-design-a-database-for-health-and-fitness-tracking-applications/
+ Chatgpt libnk- https://chatgpt.com/share/67553b35-3644-8008-a7b4-51d7dc8ea632
+
+
+
+# Design Rule Engine- DateTime repo local.
+Write code that will be used by a Shopping cart service to enforce rules on the order
+eg. Offer free 2 day shipping on orders > $35 if customer is not a prime member Offer free 2 day shipping on all orders if customer is a prime member Offer free 1 day shipping for order that are > $125 Offer free 2 hour shipping for prime customer that have > $25 and the items are grocery items
+Make this extensible to add other rules in the future Apply a 10% discount if an item has been marked for subscribe and save
+ https://youtu.be/eKU_hp7w3QI?si=9OsA-y3_WeoOr_63
+Conditions and actions set from config/external uI
+https://www.youtube.com/watch?v=BL27Qb0E4eE&list=PLCUIneK0ruzKX8uJafA81FOwn6FGeORwU&index=2
+Gaurav Sen example- https://github.com/InterviewReady/turn-based-game-ai/blob/main/src/main/java/api/RuleSet.java
+
+
+Bike rental LLD- https://chatgpt.com/share/67568e16-4660-8008-bbb1-d7aa00a35283
+
+
+
+
+
+
+
+———————————————————————————————————————————————————————————————————————————————————————————————————
+HLD
+https://youtu.be/mhUQe4BKZXs?si=1rbgPHlXzAgj5rIk
+
+
+# Pagination Offset vs Keyset/cursor pagination
+https://use-the-index-luke.com/no-offset
+https://www.reddit.com/r/programming/comments/knlp8a/stop_using_offset_for_pagination_why_its_grossly/
+https://ignaciochiazzo.medium.com/paginating-requests-in-apis-d4883d4c1c4c
+
+https://leetcode.com/discuss/interview-question/4200830/Atlassian-System-design%3A-Tagging-system/
+https://systemdesign.one/system-design-interview-cheatsheet/#tagging-service
+https://stackoverflow.com/questions/55744926/offset-pagination-vs-cursor-pagination
+https://dev.to/jackmarchant/offset-and-cursor-pagination-explained-b89
+
+
+Design Uber- https://www.youtube.com/watch?v=R_agd5qZ26Y
+
+Design notification system- https://www.codekarle.com/system-design/Notification-system-design.html
+https://www.youtube.com/watch?v=C6HHmH6wwMs (better)
+
+
+Design tinyurl- https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/requirements-of-tinyurls-design
+
+Design google docs- https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/requirements-of-tinyurls-design
+
+Design google file system- https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/concurrency-in-collaborative-editing
+
+Other designs- https://systemdesign.one/system-design-interview-cheatsheet/#tagging-service
+
+Design Key value store- https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/concurrency-in-collaborative-editing
+
+Design sequencer- https://medium.com/me/stories/drafts
+
+Design top k frequent hashtags/songs/ or anything — https://medium.com/me/stories/drafts
+
+Design Whatsapp- https://www.codekarle.com/system-design/Whatsapp-system-design.html
+
+
+Design newsfeed system-
+ https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/design-of-a-newsfeed-system
+ Short- https://youtu.be/gbysuvl2TZo?si=b7e5J-cJ2MH5k8mT
+https://youtu.be/zFupwVz7JxY?si=9wzGiwNB09TOVSAt
+
+Best-
+https://www.youtube.com/watch?v=nWp9PScmd_Q
+
+Linkedin s feed infrastructure- side read- https://rockset.com/index-conf/Index24_Linkedin.pdf
+
+
+
+Facebook video live comments-
+https://www.hellointerview.com/learn/system-design/answer-keys/fb-live-comments
+https://www.youtube.com/watch?v=tgSe27eoBG0
+
+https://systemdesign.one/live-comment-system-design/#fn:15
+https://www.infoq.com/presentations/linkedin-play-akka-distributed-systems/
+
+Facebook live video-
+ https://newsletter.systemdesign.one/p/live-streaming-architecture?utm_source=post-email-title&publication_id=1511845&post_id=144760801&utm_campaign=email-post-title&isFreemail=true&r=1fhrl8&triedRedirect=true&utm_medium=email
+* Scaling Facebook Live
+* Scaling Facebook Live-2
+* Scaling Facebook Live Videos to a Billion Users
+* Sachin Kulkarni Describes the Architecture behind Facebook Live
+* Under the hood: Broadcasting live video to millions
+* Live video solutions: Solving the thundering herd problem
+* Adaptive Bitrate Streaming
+* Understanding Request Coalescing
+* Tham Luang cave rescue
+
+
+
+
+Cron Job running at many intervals in a day to reduce peak server load-
+ https://interviewready.io/blog/concurrency-for-senior-engineers-part-ii
+https://interviewready.io/learn/system-design-course/google-docs-collaborative-editor-design/Avoiding-Thundering-Herds-in-Crons
+The cron job uses the modulo operation (USER_ID % 48) to assign users to one of the 48 intervals. The result of this operation gives you an INTERVAL_ID ranging from 0 to 47.
+
+Assume you have users with USER_IDs from 1 to 80,000.
+* The day is divided into 48 intervals.
+
+For interval 0:
+* The cron job runs and identifies users where USER_ID % 48 == 0.
+* This means users with USER_IDs like 48, 96, 144, ..., up to 79,968 will receive emails in this interval.
+For interval 1:
+* The cron job runs and identifies users where USER_ID % 48 == 1.
+* This means users with USER_IDs like 1, 49, 97, ..., up to 79,969 will receive emails in this interval.
+
+
+Different types of failures in microservices
+Doordash blog- https://doordash.engineering/2023/03/14/failure-mitigation-for-microservices-an-intro-to-aperture/?utm_source=blog.quastor.org&utm_medium=newsletter&utm_campaign=scaling-microservices-at-doordash
+
+
+Production failure— Doordash kubernetes rediness probe failure resulting in outage
+https://doordash.engineering/2022/08/09/how-to-handle-kubernetes-health-checks/
+
+Request collapsing, request hedging, cron job
+https://interviewready.io/blog/concurrency-for-senior-engineers-part-iii
+https://interviewready.io/blog/Concurrency-Patterns-for-Senior-Engineers-part-1
+
+Request collapsing code
+https://github.com/InterviewReady/Low-Level-Design/blob/main/distributed-cache/src/main/java/Cache.java#L76
+
+
+SLACK HLD
+https://slack.engineering/flannel-an-application-level-edge-cache-to-make-slack-scale/
+https://systemdesign.one/slack-architecture/
+https://www.linkedin.com/pulse/slack-system-design-surya-narayana-senqc/
+https://scaleyourapp.com/system-design-case-study-real-time-messaging-architecture/
+https://github1s.com/anshriva/redis-web-sockets-chat/blob/master/src/main/java/com/anubhav/redis/SubscriberHelper.java
+
+
+Design DROPBOX
+https://newsletter.systemdesign.one/p/dropbox-architecture?utm_source=post-email-title&publication_id=1511845&post_id=142574656&utm_campaign=email-post-title&isFreemail=true&r=1fhrl8&triedRedirect=true&utm_medium=email
+
+
+How Booking.com scaled their Customer Review System
+consistent hashing, redistribution of data without downtime
+adding new shards to scale the system
+https://mail.google.com/mail/u/0/#inbox/FMfcgzQVxbjQWCPXxDZJscHTFZWXzbrS
+https://medium.com/booking-com-development/scaling-our-customer-review-system-for-peak-traffic-cb19be434edf
+https://www.youtube.com/watch?v=BFyWl9MNDjY
+
+The resharding process described here is a bit complex, but it's designed to minimize downtime and ensure data consistency. Here is a detailed explanation:
+
+1. Provisioning and Loading: New shards (nodes) are provisioned. The coordinator nodes determine which keys will be remapped (moved) to these new shards. The new shards load these keys but the keys are not yet deleted from the old shards.
+
+2. Resharding: The process of transferring the keys from the old shards to the new ones begins. The important thing to note here is that during this process, the keys that are being moved are still available on the old shards. This ensures that the data is still accessible during the resharding process, which might take some time depending on the size of the data.
+
+3. Routing: The routing layer, unaware of the ongoing resharding, continues to direct traffic (both read and write requests) to the old shards. This means that even if new data is added (in your case, new reviews), it will still be directed to the old shards.
+
+4. Completion and Updating: Once the resharding process is complete, the routing layer is updated and begins directing traffic to the new shards. At this point, the keys that were moved can be deleted from the old shards.
+
+Your concern about new data being continuously added to the old shards during the resharding process is valid. However, this is typically handled by running the resharding process at a time when the write load is minimal, or by pausing writes briefly. For a review system with an 80:20 read-to-write ratio, this might be less of a concern as the majority of the traffic is read requests.
+
+Remember that the goal of this process is to maintain high availability and data consistency during the resharding process. By keeping the routing layer unaware of the resharding process until it's complete, it ensures that all data - old and new - is available and consistent, even if it's distributed across multiple shards.
+
+
+
+
+Design flash sale
+High contention limited resources(for update) [skip locked]
+Basically two major approaches are there.
+
+Count of inventory + user to item mapping ( separate on the fly)
+(n items for sale in one table) —> separate out initially
+
+SDFC
+https://systemdesignfightclub.com/flash-sale/
+https://github.com/systemdesignfightclub/SDFC/blob/main/system-design/flash-sale/flash-sale-textfile.md
+
+Anubhav
+https://www.youtube.com/watch?v=462JSRNPDNs
+https://www.youtube.com/watch?v=EUV-m9x5pVo
+
+https://www.reddit.com/r/leetcode/comments/zbge4a/design_flash_sale_high_concurrency_system_design/
+
+LLD problem statement
+https://leetcode.com/discuss/interview-question/system-design/1734666/system-design-online-interview-design-a-limited-time-deals
+
+Arpit Bhayani
+https://github.com/systemdesignfightclub/SDFC/blob/main/system-design/flash-sale/flash-sale-textfile.md
+
+How notion made page loads faster by using wasm sqlite for client side caching?
+https://www.notion.so/blog/how-we-sped-up-notion-in-the-browser-with-wasm-sqlite?utm_source=blog.quastor.org&utm_medium=newsletter&utm_campaign=how-notion-decreased-latency-by-20-with-caching&_bhlid=5a612757905a6e9e23c0a9c7a3d32ad8342e474a
+
+Redis use cases
+https://www.youtube.com/watch?v=5jwuDM6Z3F8
+
+Design live leaderboard, design my11circle, fantasy cricket app
+
+
+https://www.youtube.com/watch?v=1xHADtekTNg
+Hello interview design leetcode, online coding contest
+
+
+How ‪@twitter‬ keeps its Search systems up and stable at scale
+https://www.youtube.com/watch?v=dOyCq_mMtdI
+used Elastic search, Reads are synschronous and made directly to elastic search, writes are deffered.
+Realtime writes through proxy—> kafka—> workers to elastic search
+Backfilling, instead of map readuce jobs directly updating ealstic search index, puts into HDFS—> consumers/workers->elastic search
+
+
+How Robinhood uses Graph Algorithms to prevent Fraud
+email subject
+https://newsroom.aboutrobinhood.com/preventing-fraud-at-robinhood-using-graph-intelligence/?utm_source=blog.quastor.org&utm_medium=newsletter&utm_campaign=how-robinhood-uses-graph-algorithms-to-prevent-fraud&_bhlid=cd3f346495fa56ab560397a18af5a85fad14490b
+
+——————————————————————————DSA—————————————————————
+
+
+
+Next closest time- https://www.youtube.com/watch?v=OndJpimZorQ
+
+  
+
+Garipuk@9879
+673219
+- [x] https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+
+https://leetcode.com/problems/word-ladder/
+
+- [x] https://www.hackerrank.com/contests/test-your-skills-in-linked-list/challenges
+	https://www.geeksforgeeks.org/sort-k-sorted-doubly-linked-list/
+	https://www.codingninjas.com/codestudio/problems/sort-a-k-sorted-doubly-linked-list_1118118?leftPanelTab=0
+	https://www.youtube.com/watch?v=dYfM6J1y0mU
+
+https://practice.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1#
+
+- [x] 318. Maximum Product of Word Lengths
+Java Hashmap- https://leetcode.com/problems/maximum-product-of-word-lengths/discuss/1234661/Java-%2B-HashMap-Concise-solution
+
+Bit Msk- https://leetcode.com/problems/maximum-product-of-word-lengths/discuss/2085333/Short-Bitmask-Solution-(explained)-or-JAVA
+Knowledge center- https://www.youtube.com/watch?v=E8Ctj36CzuY
+
+278. First Bad Version
+https://leetcode.com/problems/first-bad-version/
+
+752. Open the Lock
+https://leetcode.com/problems/open-the-lock/
+
+1658. Minimum Operations to Reduce X to Zero
+https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/
+
+1423. Maximum Points You Can Obtain from Cards
+https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+
+Minimise the maximum difference between adjacent elements in an array
+https://www.geeksforgeeks.org/minimize-the-maximum-difference-between-adjacent-elements-in-an-array/
+
+665. Non-decreasing Array
+https://leetcode.com/problems/non-decreasing-array/
+
+1124. Longest Well-Performing Interval
+https://leetcode.com/problems/longest-well-performing-interval/
+
+462. Minimum Moves to Equal Array Elements II
+https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/
+
+1696. Jump Game VI
+https://leetcode.com/problems/jump-game-vi/
+
+
+Sahil Graph series
+997. Find the Town Judge
+https://leetcode.com/problems/find-the-town-judge/
+
+547. Number of Provinces
+https://leetcode.com/problems/number-of-provinces/
+
+733. Flood Fill
+https://leetcode.com/problems/flood-fill/
+
+1254. Number of Closed Islands
+boundary dfs
+https://leetcode.com/problems/number-of-closed-islands/
+
+130. Surrounded Regions
+boundary dfs
+https://leetcode.com/problems/surrounded-regions/
+
+Count Inversions
+https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1
+Striver- https://www.youtube.com/watch?v=kQ1mJlwW-c0&t=687s
+
+775. Global and Local Inversions
+https://leetcode.com/problems/global-and-local-inversions/
+
+315. Count of Smaller Numbers After Self
+https://leetcode.com/problems/count-of-smaller-numbers-after-self/
+
+916. Word Subsets
+https://leetcode.com/problems/word-subsets/
+
+
+560. Subarray Sum Equals K
+https://leetcode.com/problems/subarray-sum-equals-k/
+Delete Blocks of Linked List
+https://www.hackerrank.com/contests/weekly-coding-contest-linked-list/challenges/delete-blocks-of-linked-list/problem
+Delete continuous nodes with sum K from a given linked list
+https://www.geeksforgeeks.org/delete-continuous-nodes-with-sum-k-from-a-given-linked-list/
+
+
+1171. Remove Zero Sum Consecutive Nodes from Linked List
+https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/
+https://www.youtube.com/watch?v=oyPFsOWTXws
+
+Delete Blocks of Linked List
+https://www.hackerrank.com/contests/weekly-coding-contest-linked-list/challenges/delete-blocks-of-linked-list/problem
+Subarrays With Zero Sum
+https://www.codingninjas.com/codestudio/problems/subarrays-with-zero-sum_3161876?leftPanelTab=0
+
+
+658. Find K Closest Elements
+https://leetcode.com/problems/find-k-closest-elements/
+https://www.swagwaladeveloper.com/s/courses/61dd712c0cf2008e689e6df0/take
+
+33. Search in Rotated Sorted Array
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+
+81. Search in Rotated Sorted Array II
+https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+
+153. Find Minimum in Rotated Sorted Array
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+
+374. Guess Number Higher or Lower
+https://leetcode.com/problems/guess-number-higher-or-lower/
+
+69. Sqrt(x)
+https://leetcode.com/problems/sqrtx/
+
+35. Search Insert Position
+https://leetcode.com/problems/search-insert-position/
+
+
+34. Find First and Last Position of Element in Sorted Array
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
+2089. Find Target Indices After Sorting Array
+https://leetcode.com/problems/find-target-indices-after-sorting-array/
+
+1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance
+https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
+
+
+743. Network Delay Time
+https://leetcode.com/problems/network-delay-time/
+
+1105. Filling Bookcase Shelves
+https://leetcode.com/problems/filling-bookcase-shelves/
+
+336. Palindrome Pairs
+https://leetcode.com/problems/palindrome-pairs/
+
+112. Path Sum
+https://leetcode.com/problems/path-sum/
+
+113. Path Sum II
+https://leetcode.com/problems/path-sum-ii/
+
+16. 3Sum Closest
+https://leetcode.com/problems/3sum-closest/description/
+
+472. Concatenated Words
+https://leetcode.com/problems/concatenated-words/description/
+
+Alice String Game
+https://www.hackerrank.com/contests/weekly-coding-contest-stackqueue-1665844111/challenges/alice-string-game/problem
+
+909. Snakes and Ladders
+https://leetcode.com/problems/snakes-and-ladders/description/
+Neetcode- https://www.youtube.com/watch?v=6lH4nO3JfLk
+Leetcode own post- https://leetcode.com/problems/snakes-and-ladders/solutions/2725693/java-solution-1d-array-adjacency-list-bfs/
+Related prob- https://www.hackerrank.com/challenges/the-quickest-way-up/problem
+
+Subarray sum 0
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/hashmap-and-heaps/count_of_all_subarrays_with_zero_sum/topic
+
+Subarray Sum equals K
+https://leetcode.com/problems/subarray-sum-equals-k/
+
+523. Continuous Subarray Sum
+https://leetcode.com/problems/continuous-subarray-sum/description/
+Neetcode- https://www.youtube.com/watch?v=OKcrLfR-8mE
+
+
+
+465 - Optimal Account Balancing/ Splitwise algorithm
+https://leetcode.ca/2017-03-09-465-Optimal-Account-Balancing/
+Settle Debt
+https://www.codingninjas.com/codestudio/problems/settle-debt_1232658?leftPanelTab=2
+Debt Paid
+https://www.hackerrank.com/contests/coding-test-backtracking/challenges/debt-paid
+Solution- https://www.youtube.com/watch?v=WaUlOC1T07c
+
+
+279. Perfect Squares
+https://leetcode.com/problems/perfect-squares/description/
+
+907. Sum of Subarray Minimums
+https://leetcode.com/problems/sum-of-subarray-minimums/submissions/849579275/
+https://www.youtube.com/watch?v=9-TXIVEXX2w
+// [3,4,4,5,4,1]
+
+413. Arithmetic Slices
+https://leetcode.com/problems/arithmetic-slices/description/
+
+446. Arithmetic Slices II - Subsequence
+https://leetcode.com/problems/arithmetic-slices-ii-subsequence/description/
+https://www.youtube.com/watch?v=XjLT4TaXsgw
+
+1657. Determine if Two Strings Are Close
+https://leetcode.com/problems/determine-if-two-strings-are-close/description/
+string, subsequence
+
+392. Is Subsequence
+https://leetcode.com/problems/is-subsequence/?envType=daily-question&envId=2023-09-22
+string, subsequence
+
+1289. Minimum Falling Path Sum II
+https://leetcode.com/problems/minimum-falling-path-sum-ii/description/
+
+1774. Closest Dessert Cost
+https://leetcode.com/problems/closest-dessert-cost/description/
+
+739. Daily Temperatures
+https://leetcode.com/problems/daily-temperatures/description/
+
+980. Unique Paths III
+https://leetcode.com/problems/unique-paths-iii/description/
+
+290. Word Pattern
+https://leetcode.com/problems/word-pattern/description/
+
+1277. Count Square Submatrices with All Ones
+https://leetcode.com/problems/count-square-submatrices-with-all-ones/description/
+
+2244. Minimum Rounds to Complete All Tasks
+https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/
+
+452. Minimum Number of Arrows to Burst Balloons
+https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/
+
+Find the middle of a given linked list
+https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/
+
+1224. Maximum Equal Frequency
+https://leetcode.com/problems/maximum-equal-frequency/description/
+
+1519. Number of Nodes in the Sub-Tree With the Same Label
+https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/description/
+
+2246. Longest Path With Different Adjacent Characters
+https://leetcode.com/problems/longest-path-with-different-adjacent-characters/submissions/877677634/
+
+1061. Lexicographically Smallest Equivalent String
+https://leetcode.com/problems/lexicographically-smallest-equivalent-string/submissions/878193907/
+
+
+// bipartite graph, lcs question
+// https://www.youtube.com/watch?v=nrIBmbS2zlk
+D - Collision 
+https://atcoder.jp/contests/abc209/tasks/abc209_d
+Akbar's Kingdom
+https://www.hackerrank.com/contests/weekly-test-graph/challenges/akbars-kingdom/problem
+
+
+1472. Design Browser History
+https://leetcode.com/problems/design-browser-history/description/
+
+735. Asteroid Collision
+https://leetcode.com/problems/asteroid-collision/description/
+
+926. Flip String to Monotone Increasing
+https://leetcode.com/problems/flip-string-to-monotone-increasing/description/
+
+918. Maximum Sum Circular Subarray
+https://leetcode.com/problems/maximum-sum-circular-subarray/description/
+Similar to kadanes algo(applied with global min)
+
+456. 132 Pattern
+https://leetcode.com/problems/132-pattern/description/
+
+1443. Minimum Time to Collect All Apples in a Tree
+https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/description/
+
+491. Non-decreasing Subsequences
+https://leetcode.com/problems/non-decreasing-subsequences/description/
+
+93. Restore IP Addresses
+https://leetcode.com/problems/restore-ip-addresses/description/
+Same as palindrome partitioning
+131. Palindrome Partitioning
+https://leetcode.com/problems/palindrome-partitioning/
+
+2359. Find Closest Node to Given Two Nodes
+https://leetcode.com/problems/find-closest-node-to-given-two-nodes/description/
+
+1071. Greatest Common Divisor of Strings
+https://leetcode.com/problems/greatest-common-divisor-of-strings/description/
+
+904. Fruit Into Baskets
+https://leetcode.com/problems/fruit-into-baskets/description/
+Sliding window
+
+2187. Minimum Time to Complete Trips
+https://leetcode.com/problems/minimum-time-to-complete-trips/
+Binary search(ceil) upper bound range based bs
+many questions on this pattern
+
+567. Permutation in String
+https://leetcode.com/problems/permutation-in-string/
+
+652. Find Duplicate Subtrees
+https://leetcode.com/problems/find-duplicate-subtrees/
+
+2444. Count Subarrays With Fixed Bounds
+https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/
+
+958. Check Completeness of a Binary Tree
+https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/
+
+2360. Longest Cycle in a Graph
+https://leetcode.com/problems/longest-cycle-in-a-graph/description/
+
+983. Minimum Cost For Tickets
+https://leetcode.com/problems/minimum-cost-for-tickets/description/
+
+871. Minimum Number of Refueling Stops (greedy)
+https://leetcode.com/problems/minimum-number-of-refueling-stops/description/
+youtube.com/watch?v=tAdMNnd3CII
+
+881. Boats to Save People (greedy)
+https://leetcode.com/problems/boats-to-save-people/description/
+
+
+String LCS problems
+1312. Minimum Insertion Steps to Make a String Palindrome
+https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/
+1143. Longest Common Subsequence
+https://leetcode.com/problems/longest-common-subsequence/
+516. Longest Palindromic Subsequence
+https://leetcode.com/problems/longest-palindromic-subsequence/description/
+Minimum number of deletions to make a string palindrome
+https://www.geeksforgeeks.org/minimum-number-deletions-make-string-palindrome/
+
+Heap
+2336. Smallest Number in Infinite Set
+https://leetcode.com/problems/smallest-number-in-infinite-set/description/
+
+MATRIX
+59. Spiral Matrix II
+https://leetcode.com/problems/spiral-matrix-ii/description/
+
+Same as house robber
+2140. Solving Questions With Brainpower
+https://leetcode.com/problems/solving-questions-with-brainpower/description/
+
+mod
+2466. Count Ways To Build Good Strings https://leetcode.com/problems/count-ways-to-build-good-strings/description/
+
+
+1721. Swapping Nodes in a Linked List
+https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/
+
+Yet Another Problem on Tree
+https://www.hackerrank.com/contests/weekly-coding-contest-binary-tree-1664603827/challenges/yet-another-tree-problem-1-1
+check chatgpt
+
+894. All Possible Full Binary Trees
+https://leetcode.com/problems/all-possible-full-binary-trees/description/?envType=list&envId=54cnzbmv recursion,return value from recursion   Maximize MEX by adding or subtracting K from Array elements
+Atlassian interview
+https://www.geeksforgeeks.org/maximize-mex-by-adding-or-subtracting-k-from-array-elements/ https://codeforces.com/contest/1294
+
+
+
+
+———————————————————————GRAPH—————————————————————————
+
+1. Depth First Search (DFS)
+2. Breadth First Search (BFS)
+3. Topological Sort
+4. Union Find
+5. Cycle Detection
+6. Connected Components
+7. Bipartite Graphs
+8. Flood Fill
+9. Minimum Spanning Tree
+10. Shortest Path
+
+
+GRAPHS
+Catalan numbers
+96. Unique Binary Search Trees
+https://leetcode.com/problems/unique-binary-search-trees/description/
+
+
+920. Number of Music Playlists
+https://leetcode.com/problems/number-of-music-playlists/description/
+(very difficult, see image drawn in copy)
+
+
+2616. Minimize the Maximum Difference of Pairs
+https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description/
+https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/solutions/3406380/i-kotlin-recursion-dp-explained-non-binary-search-approach/
+again very difficult
+see recursion tree in copy
+
+
+2369. Check if There is a Valid Partition For The Array
+https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/description/
+
+
+86. Partition List
+Linkedlist
+https://leetcode.com/problems/partition-list/
+
+
+542. 01 Matrix
+https://leetcode.com/problems/01-matrix/description/
+bfs matrix
+
+
+1615. Maximal Network Rank
+https://leetcode.com/problems/maximal-network-rank/description/
+https://www.youtube.com/watch?v=lXiv1sw58d0
+
+
+1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
+https://www.youtube.com/watch?v=zl-rLRPpl_s
+https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/
+Kruskals, DSUF, union find, graph, disjoint set
+
+1584. Min Cost to Connect All Points
+prims, graph mst
+
+https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=minimum-spanning-tree
+Krushkals implemented, DSU, disjoint set, Minimum spanning tree MST
+
+Number of Provinces
+https://www.geeksforgeeks.org/problems/number-of-provinces/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=number-of-provinces
+547. Number of Provinces
+DSU
+
+1319. Number of Operations to Make Network Connected
+DSU
+
+721. Accounts Merge
+DSU
+
+305. Number of Islands II
+https://takeuforward.org/graph/number-of-islands-ii-online-queries-dsu-g-51/
+DSU
+
+827. Making A Large Island
+similar concept as above
+DSU
+https://takeuforward.org/graph/number-of-islands-ii-online-queries-dsu-g-51/
+
+1101. The Earliest Moment When Everyone Become Friends
+google interview
+
+1202. Smallest String With Swaps
+DSU, google
+
+947. Most Stones Removed with Same Row or Column
+https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/
+
+
+Kosaraju s algorithm, strongly connected components
+https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=strongly-connected-components-kosarajus-algo
+
+
+
+
+
+
+
+646. Maximum Length of Pair Chain
+https://leetcode.com/problems/maximum-length-of-pair-chain/description/
+https://leetcode.com/problems/non-overlapping-intervals/description/
+LIS
+Similar- 435. Non-overlapping Intervals
+
+
+403. Frog Jump
+https://leetcode.com/problems/frog-jump/description/
+same as jump game recursion
+
+
+2483. Minimum Penalty for a Shop
+https://leetcode.com/problems/minimum-penalty-for-a-shop/description/
+prefix postfix
+https://www.youtube.com/watch?v=0d7ShRoOFVE
+
+2707. Extra Characters in a String
+https://leetcode.com/problems/extra-characters-in-a-string/description/?envType=daily-question&envId=2023-09-02
+Same as Word Break leetcode
+
+725. Split Linked List in Parts
+https://leetcode.com/problems/split-linked-list-in-parts/
+linkedlist
+
+118. Pascal's Triangle
+https://leetcode.com/problems/pascals-triangle/description/?envType=daily-question&envId=2023-09-08
+https://www.youtube.com/watch?v=nPVEaB3AjUM
+
+
+377. Combination Sum IV
+https://leetcode.com/problems/combination-sum-iv/description/
+
+1359. Count All Valid Pickup and Delivery Options
+https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/description/?envType=daily-question&envId=2023-09-10
+maths permutations and combinations
+
+
+1282. Group the People Given the Group Size They Belong To
+https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description/?envType=daily-question&envId=2023-09-11
+
+
+1647. Minimum Deletions to Make Character Frequencies Unique
+https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/description/
+
+
+332. Reconstruct Itinerary
+https://leetcode.com/problems/reconstruct-itinerary/description/
+
+
+Binary search, dfs— can be solved using dijkstra try it later
+1631. Path With Minimum Effort
+https://leetcode.com/problems/path-with-minimum-effort/description/?envType=daily-question&envId=2023-09-1
+778. Swim in Rising Water
+https://leetcode.com/problems/swim-in-rising-water/description/
+
+847. Shortest Path Visiting All Nodes
+graph, bfs, shortest path, revisting a node, bitmask
+
+1658. Minimum Operations to Reduce X to Zero
+Longest subarray sum k
+
+1048. Longest String Chain
+https://leetcode.com/problems/longest-string-chain/description/?envType=daily-question&envId=2023-09-23
+LIS, dp, recursion, longest increasing subsequence, 01 knapsack
+
+799. Champagne Tower
+https://leetcode.com/problems/champagne-tower/description/?envType=daily-question&envId=2023-09-24
+Simulation, weird problem
+
+
+436. Find Right Interval
+https://leetcode.com/problems/find-right-interval/description/?envType=study-plan-v2&envId=binary-search
+binary search lower bound, find first occurance
+https://www.techiedelight.com/find-first-or-last-occurrence-of-a-given-number-sorted-array/
+
+
+389. Find the Difference
+https://leetcode.com/problems/find-the-difference/description/?envType=daily-question&envId=2023-09-25
+bitwise
+
+316. Remove Duplicate Letters
+https://leetcode.com/problems/remove-duplicate-letters/?envType=daily-question&envId=2023-09-26
+String, stack, monotonic increasing stack
+
+880. Decoded String at Index
+https://leetcode.com/problems/decoded-string-at-index/description/
+
+
+456. 132 Pattern
+https://leetcode.com/problems/132-pattern/?envType=daily-question&envId=2023-09-30
+Monotonic decreasing stack
+
+Longest Distinct characters in string
+https://practice.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
+https://github.com/arpan-banerjee7/DS_ALGO/blob/master/SlidingWindow/src/slidingwindow/variable/LongestSubstringWithoutRepeatingChars.java
+same as longest string with k uniqu
+e chars
+sliding widow, string, intuit
+
+
+2038. Remove Colored Pieces if Both Neighbors are the Same Color
+https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/
+simple for loop check, game theory
+
+
+48. Rotate Image
+transpose and reverse each row, for transpose, i=0 to n, j=i t0 n, only upper side of diagonal is needed, or else in place transpose wll not be possible
+https://leetcode.com/problems/rotate-image/description/
+matrix rotate 90
+
+Binary tree path sum from leaf to leaf- gfg hard
+https://practice.geeksforgeeks.org/problems/maximum-path-sum/1
+max diameter of binary tree, binary tree maximum path sum
+
+343. Integer Break
+https://leetcode.com/problems/integer-break/description/?envType=daily-question&envId=2023-10-06
+recursion, dp
+
+1458. Max Dot Product of Two Subsequences
+https://leetcode.com/problems/max-dot-product-of-two-subsequences/?envType=daily-question&envId=2023-10-08
+todo
+
+2009. Minimum Number of Operations to Make Array Continuous
+https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/description/?envType=daily-question&envId=2023-10-10
+todo   2125. Number of Laser Beams in a Bank simple maths, array
+
+2870. Minimum Number of Operations to Make Array Empty
+Simple, remainder,0-9 unique reminders, maths, array,hashmap
+
+
+
+———————————————————————————————————————————————————————————————————————————
+https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1
+Add one number to a linked list
+Recursion
+
+160. Intersection of Two Linked Lists
+https://leetcode.com/problems/intersection-of-two-linked-lists/description/
+Linked list striver
+
+Delete all occurrences of a given key in a doubly linked list
+https://www.geeksforgeeks.org/problems/delete-all-occurrences-of-a-given-key-in-a-doubly-linked-list/1
+No need to delete previous links of deleted nodes, it will be garbage collected
+
+
+82. Remove Duplicates from Sorted List II
+https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
+Linked list striver next.next concept, difficult
+
+Remove duplicates from a sorted doubly linked list
+https://www.geeksforgeeks.org/problems/remove-duplicates-from-a-sorted-doubly-linked-list/1
+
+Take care of previous pointers
+
+Sort linked list of 0s 1s 2s
+https://www.codingninjas.com/studio/problems/sort-linked-list-of-0s-1s-2s_1071937?leftPanelTabValue=PROBLEM
+Take three dummy lists indocating 0 1 and 2
+
+328. Odd Even Linked List
+https://leetcode.com/problems/odd-even-linked-list/description/
+
+https://www.techiedelight.com/reverse-alternate-group-k-nodes-linked-list/
+Vs code solution framed from hacker rank
+
+Rotate a Linked List
+https://www.geeksforgeeks.org/problems/rotate-a-linked-list/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+https://www.youtube.com/watch?v=uT7YI7XbTY8&list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU&index=23
+
+Flattening a Linked List
+https://www.geeksforgeeks.org/problems/flattening-a-linked-list/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+PriorityQueue approach added
+
+
+1472. Design Browser History
+https://leetcode.com/problems/design-browser-history/description/
+Stack/DLL doubly lunkedlist
+
+1786. Number of Restricted Paths From First to Last Node
+https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/submissions/1163592032/?envType=list&envId=53js48ke
+Graph djikstra + dfs
+
+
+https://leetcode.ca/2021-11-30-2077-Paths-in-Maze-That-Lead-to-Same-Room/
+Weird, have to know the trick, find cycles while creating the graph
+——————————————————————————————————————————————————————————————————
+1366. Rank Teams by Votes
+https://leetcode.com/problems/rank-teams-by-votes/description/
+Atlassian, sort 2d array based ob ranks
+
+860. Lemonade Change
+https://leetcode.com/problems/lemonade-change/description/
+Tricky, if-else, Atlassian,array
+
+Design snake game-
+https://www.youtube.com/watch?v=hmrdIwSAW3o
+https://gist.github.com/abhishekhandacse/09365d5cf33fb0f28d015239c874005a
+Look at Datetime folder IntelliJ old
+https://leetcode.ca/2016-11-17-353-Design-Snake-Game/
+Atlassian
+
+Logger rate limiter
+https://leetcode.ca/2016-11-23-359-Logger-Rate-Limiter/
+Atlassian
+
+981. Time Based Key-Value Store
+https://leetcode.com/problems/time-based-key-value-store/description/
+Atlassian, basic binary search, Hashmat of list of  pair
+
+
+Linkedlist- to be added in my asa GitHub ADDED https://www.codingninjas.com/studio/problems/sort-linked-list-of-0s-1s-2s_1071937?leftPanelTabValue=PROBLEM Add two numbers
+
+Design hit counter Atlassian
+https://www.geeksforgeeks.org/design-a-hit-counter/
+
+
+1223. Dice Roll Simulation
+https://leetcode.com/problems/dice-roll-simulation/description/
+Atlassian, die rolls, return value from recursion,
+Same as- https://leetcode.com/problems/count-vowels-permutation/description/
+
+https://leetcode.com/discuss/interview-question/4589809/Amazon-OA/
+
+
+
+
+
+
+
+
+———————————————————— ——————————————————————————————-
+Striver Binary Search
+———————————————————————————————————————————————————-
+
+Find the element that appears once
+https://www.geeksforgeeks.org/problems/element-appearing-once2552/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+
+153. Find Minimum in Rotated Sorted Array
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
+
+Peak element
+https://www.geeksforgeeks.org/problems/peak-element/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_articlehttps://leetcode.com/problems/find-peak-element/description/
+
+
+852. Peak Index in a Mountain Array
+https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
+
+69. Sqrt(x)
+https://leetcode.com/problems/sqrtx/description/
+
+Find Nth root of M
+https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+Trick to handle overflow is imp. Short circuiting the power calculation logic
+
+———————————————————added—————
+
+
+875. Koko Eating Bananas875. Koko Eating Bananas
+Out of bounds check, long double
+pattern of finding answers. whenever we have this pattern a loop can be reduced using binary search
+
+1482. Minimum Number of Days to Make m Bouquets
+https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/
+// https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/solutions/4739917/java-binary-search-sliding-window/
+
+
+1283. Find the Smallest Divisor Given a Threshold
+https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/description/
+
+1011. Capacity To Ship Packages Within D Days
+https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/
+
+1539. Kth Missing Positive Number
+https://leetcode.com/problems/kth-missing-positive-number/description/
+
+Aggressive Cows
+https://www.geeksforgeeks.org/problems/aggressive-cows/0
+
+Allocate minimum number of pages
+https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+same as split array largest sum
+
+410. Split Array Largest Sum
+same as allocate min pages
+https://leetcode.com/problems/split-array-largest-sum/description/
+
+4. Median of Two Sorted Arrays
+https://leetcode.com/problems/median-of-two-sorted-arrays/description/
+
+K-th element of two Arrays
+https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+same as median of two soretd arrays
+
+
+Row with maximum number of 1s
+https://youtu.be/SCz-1TtYxDI?si=Dbv5bqEFfUnzzw4V
+https://www.geeksforgeeks.org/problems/row-with-minimum-number-of-1s5430/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+
+Search in 2D matrix
+https://www.youtube.com/watch?v=JXU4Akft7yk&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=26
+
+
+Find median in a row-wise sorted matrix
+https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+https://www.youtube.com/watch?v=Q9wXgdxJq48&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=29
+
+540. Single Element in a Sorted Array
+https://leetcode.com/problems/single-element-in-a-sorted-array/description/
+Striver binary search, phone pay
+
+273. Integer to English Words
+Number system, need more practce, recursion good concept
+
+2064. Minimized Maximum of Products Distributed to Any Store
+striver binary search technique
+
+———————————————————————————————————————-—————————————————-—————————————————-—————————————————————————————————————————————-—————————————————-—————————————————-—————————————————-—————————————————-—————————————————
+
+
+
+
+
+
+
+
+
+130. Surrounded Regions
+https://leetcode.com/problems/surrounded-regions/description/
+
+
+91. Decode Ways
+https://leetcode.com/problems/decode-ways/description/
+
+133. Clone Graph
+https://leetcode.com/problems/clone-graph/description/
+Graph dfs amazon
+
+128. Longest Consecutive Sequence
+https://leetcode.com/problems/longest-consecutive-sequence/description/
+HAshset, simple, check for the first element of the series, currently iterating over x, check in set if x-1 is present, when not present then current element is the starting
+Union find sol is also there bt its tricky
+
+417. Pacific Atlantic Water Flow
+https://leetcode.com/problems/pacific-atlantic-water-flow/description/
+DFS, boundary DFS,graph
+1254. Number of Closed Islands- similar question
+
+Graph Valid Tree
+https://www.codingninjas.com/studio/problems/graph-valid-tree_1376618?leftPanelTabValue=PROBLEM
+Dfs, checkCycle in undirected graph, find number of connected components
+
+————————added——————————————
+
+
+
+INTERVALS
+https://leetcode.com/problems/merge-intervals/
+https://leetcode.com/problems/non-overlapping-intervals/description/
+https://leetcode.com/problems/non-overlapping-intervals/description/
+
+11. Container With Most Water
+https://leetcode.com/problems/container-with-most-water/description/
+Trapping rain water, max area of histogram
+
+3047. Find the Largest Area of Square Inside Two Rectangles
+https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/description/
+Geometric algorithms
+
+443. String Compression
+https://leetcode.com/problems/string-compression/description/
+
+1268. Search Suggestions System
+https://leetcode.com/problems/search-suggestions-system/description/
+Neetcode, trie two pointers
+
+1315. Sum of Nodes with Even-Valued Grandparent
+https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/description/
+https://www.geeksforgeeks.org/sum-of-all-the-child-nodes-with-even-grandparents-in-a-binary-tree/
+
+Common manager of employee
+https://aaronice.gitbook.io/lintcode/trees/closet-common-manager
+https://leetcode.com/discuss/interview-question/1648418/amazon-onsite-find-common-manager
+
+
+https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/description/
+Iterate 2d sub matrices
+Similar question- https://leetcode.com/problems/range-sum-query-2d-immutable/description/
+Leetcode contest 387
+https://www.youtube.com/watch?v=xaL5rO_o7kw
+
+Weekly contest 388
+https://leetcode.com/discuss/general-discussion/4851105/weekly-contest-388
+3076. Shortest Uncommon Substring in an Array
+
+//https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/solutions/4852935/java-brute-force-optimised-hashmap-priorityqueue-detailed-explanation-in-comments/
+
+
+419. Battleships in a Board
+same as count number of islands
+https://www.youtube.com/watch?v=74NuFEdzs6A
+
+1976. Number of Ways to Arrive at Destination
+djikstra
+
+3084. Count Substrings Starting and Ending with Given Character
+
+
+283. Move Zeroes
+https://leetcode.com/problems/move-zeroes/description/
+two pointers, swap
+
+355. Design Twitter
+https://leetcode.com/problems/design-twitter/description/
+Microsoft dsa round
+
+179. Largest Number
+https://leetcode.com/problems/largest-number/description/?envType=problem-list-v2&envId=9g6io8tj
+
+
+
+9972924050— anil
+
+
+————————————————————————————————————————————————————————————————————————————————————————————————
+Sliding window 2 pointer, striver
+_________________________________________________________________________________________________________________________________________________________________
+
+1358. Number of Substrings Containing All Three Characters
+Sliding window, microsoft
+
+395. Longest Substring with At Least K Repeating Characters
+https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/
+recursion, sliding window
+
+424. Longest Repeating Character Replacement
+https://leetcode.com/problems/longest-repeating-character-replacement/description/
+sliding window, two pointers
+
+1004. Max Consecutive Ones III
+https://leetcode.com/problems/max-consecutive-ones-iii/description/
+
+930. Binary Subarrays With Sum
+same as subarray with sum k, striver has another approach where we can avoid using extra space of hashmap, but is a bit complicated
+
+1248. Count Number of Nice Subarrays
+https://leetcode.com/problems/count-number-of-nice-subarrays/description/
+
+
+992. Subarrays with K Different Integers
+https://leetcode.com/problems/subarrays-with-k-different-integers/description/
+Same pattern count of subarrays with given k
+atmost(k) - atmost(k-1)
+
+
+
+1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+Clever sliding window, using monotonic wueues
+————————————————————————— BACKTRACKING REVISION————
+
+Backtracking with constraints:
+ - N-Queens (51)
+ - Sudoku Solver (37)
+ - Beautiful Arrangement (526)
+https://www.techiedelight.com/generate-permutations-string-java-recursive-iterative/
+https://leetcode.com/problems/subsets/description/
+ - Palindrome Partitioning (131)
+ - Partition to K Equal Sum Subsets (698)
+
+Recursive backtracking:
+ - Generate Parentheses (22)
+ - Palindromic Substrings (647)
+ - Restore IP Addresses (93)
+ - Expression Add Operators (282)
+ - Unique Paths III (980)
+
+Backtracking with grid traversal:
+ - Word Search (79)
+ - Word Search II (212)
+ - Unique Paths III (980)
+ - Number of Islands II (305)
+ - N-Queens (51)
+
+Backtracking with permutation generation:
+ - Permutations (46)
+ - Palindromic Substrings (647)
+ - Expression Add Operators (282)
+ - Beautiful Arrangement (526)
+ - Number of Islands II (305)
+1255. Maximum Score Words Formed by Letters
+
+Backtracking with combination generation:
+ - Combination Sum (39)
+ - Subsets (78)
+ - Combination Sum II (40)
+ - Partition to K Equal Sum Subsets (698)
+ - Word Search II (212)
+
+
+
+
+1325. Delete Leaves With a Given Value
+https://leetcode.com/problems/delete-leaves-with-a-given-value/description/
+https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+
+```
+public TreeNode removeLeafNodes(TreeNode root, int target) {
+        return helper(root,target);
+    }
+
+```
+	vs
+
+```
+		public TreeNode removeLeafNodes(TreeNode root, int target) {
+        helper(root,target);
+        return root;
+    }
+```
+
+pass by value java is
+
+1038. Binary Search Tree to Greater Sum Tree
+https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/
+binary tree, interesting
+
+979. Distribute Coins in Binary Tree
+Binary Tree post order traversal
+
+SImilar problems
+https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/
+https://leetcode.com/problems/binary-tree-cameras/
+
+
+
+443. String Compression
+String, nice concept
+3163. String Compression III
+string
+
+
+Mathematical Problems-
+507. Perfect Number
+https://leetcode.com/problems/perfect-number/description/
+
+3164. Find the Number of Good Pairs II
+https://www.youtube.com/watch?v=gKCswsr7l68
+
+
+
+
+Google interview DSA
+https://leetcode.com/discuss/interview-question/4948927/Google-or-SDE2-or-Phone-Screen
+679. 24 Game
+google recursion backtracking
+https://leetcode.com/discuss/interview-question/1593355/google-phone-interview-rejected
+cord tree see in datetime intellij
+https://leetcode.com/discuss/interview-question/413991/
+
+// https://leetcode.com/discuss/interview-question/2122202/Google-or-Screening
+Arrange strings
+
+
+
+
+
+
+Bit manipulation
+https://medium.com/@nischalbohara77/binary-representation-of-integers-bc7f52c21202
+
+
+2433. Find The Original Array of Prefix Xor
+https://www.youtube.com/watch?v=TDjmp768H3Q
+
+1442. Count Triplets That Can Form Two Arrays of Equal XOR
+https://www.youtube.com/watch?v=IAcO4Wyr2ak
+
+
+1404. Number of Steps to Reduce a Number in Binary Representation to One
+
+
+
+
+
+
+Contests-
+https://leetcode.com/discuss/general-discussion/5208910/weekly-contest-399
+https://leetcode.com/discuss/general-discussion/5281997/weekly-contest-401
+
+
+3180. Maximum Total Reward Using Operations I
+recursion backtracking, difficult to guess the limit for dp
+
+
+Weekly contest 403
+3195. Find the Minimum Area to Cover All Ones I
+3197. Find the Minimum Area to Cover All Ones II
+Geometry, simple observation, difficult to write the code and loops easy to thibnk
+
+
+
+1190. Reverse Substrings Between Each Pair of Parentheses
+stack, parenthesis
+
+2096. Step-By-Step Directions From a Binary Tree Node to Another
+binary tree, lowest common ancestor similar, java pass by val pass by reference
+
+1110. Delete Nodes And Return Forest
+binary tree, delete nodes, still traverse, new concept
+
+
+1530. Number of Good Leaf Nodes Pairs
+binary tree, return vsl from recursion, count steps, DFS, good revision
+
+
+1636. Sort Array by Increasing Frequency
+custom comparator a-b, a>b
+https://stackoverflow.com/questions/51342163/custom-comparator-java
+ Arrays.sort() is applicable for wrapper classes only, INTEGER not int, so boxing is required and while returning ans unboxing is required.
+
+
+2191. Sort the Jumbled Numbers
+Arrays.sort() boxing autoboxing Integer, custom comparator
+
+
+2976. Minimum Cost to Convert String I
+Dijkstra, dfs from every node
+
+
+2045. Second Minimum Time to Reach Destination
+
+Dijkstra, two distance array, simple maths
+
+
+1653. Minimum Deletions to Make String Balanced
+return val from recursion string
+
+
+2134. Minimum Swaps to Group All 1's Together II
+sliding window, modulous operator imp
+
+729. My Calendar I
+heap, binary search, similar to merge intervals but this is not merge interval it is events check notes
+
+1508. Range Sum of Sorted Subarray Sums
+Brute forec very easy, another interesting solution using priority queeu, min heap
+
+3016. Minimum Number of Pushes to Type Word II Arrays.sort() int array boxing streams in order to sort in descending order
+
+https://leetcode.com/problems/magic-squares-in-grid/?envType=daily-question&envId=2024-08-09
+matrix, row col, diagonal and reverse diagonal traversal
+
+https://leetcode.com/problems/spiral-matrix-iii/description/
+matrix, clever traversals with directions loop and steps count
+
+
+719. Find K-th Smallest Pair Distance
+https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/?envType=daily-question&envId=2024-08-14
+array, tricky binary search, sliding window, heap, good question not that difficult bt tricky
+
+
+650. 2 Keys Keyboard
+https://www.youtube.com/watch?v=zELBK8_vB7Y
+return val from recursion, copypaste paste, recursion idea is novel
+
+Dynamic Programming | Building Bridges
+https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
+LIS, observation
+
+
+3265. Count Almost Equal Pairs I
+array, string swap
+
+
+975. Odd Even Jump
+precompute, traverse from behind, dp
+
+2018. Check if Word Can Be Placed In Crossword
+recursion, simple, all possible ways
+
+310. Minimum Height Trees
+graph tree, topo sort kahn s algo
+https://www.youtube.com/watch?v=ZXANlaEuYvQ&t=2056s
+concept of bfs, layer wise peeling, find longest path start from end
+
+877. Stone Game
+Recursion, Assume the worst when things happen to you, Do your best when you can!
+pep coding, optimal game strategy
+
+1470. Shuffle the Array
+with extra space easy
+
+1470. Shuffle the Array
+https://leetcode.com/problems/shuffle-the-array/description/
+bit magic google, many concepts used here, (1 << 10) - 1 is a common technique used to create a bitmask with a specific number of bits set to 1.
+2’s compliment,  >>, <<  bitwise and operations
+
+1937. Maximum Number of Points with Cost
+recursion+dp did not work, tle, need furthr improvement
+
+362. Design Hit Counter
+normal hashmap, put all timestamps in hashmap and then while getting itertate the whole hashmap look for each timestamp if its before 300 secs ot not add the hits
+
+better approach using a queue, add at last remove from first. but hits 1 1 1 1 1 1 problem.
+
+Dequeue with pair. timestamp count, if events come in the same timestamp,-> check latest entry in heap, get the count, do count+1, remove it add the new entry with the updated count.
+
+remove from begning all the old entries while gtting
+
+
+1758. Minimum Changes To Make Alternating Binary String
+1888. Minimum Number of Flips to Make the Binary String Alternating
+Both questions same concept, last question sliding window
+ !!!!!!!!!!! One copy of this entire notes saved in this problem !!!!!!
+3282. Reach End of Array With Max Score
+Google interview
+https://leetcode.com/discuss/interview-question/4947290/google-phone-maximum-total-score
+
+
+Divide a plane into two halves so that rectangles lieng on the either side has equal areas.
+https://leetcode.com/discuss/interview-question/5587195/Google-interview-experience-or-Screening-round
+
+https://leetcode.com/problems/rectangle-area-ii/description/
+Try attending this similar
+
+Longest valid paranthesis
+https://leetcode.com/problems/longest-valid-parentheses/submissions/1431120021/
+stack
+—————————————————————
+
+TRIE
+https://takeuforward.org/data-structure/implement-trie-1/
+Insert, search, startwIth
+
+Given a matrix of characters, find all the words that exist in the dictionary. You can’t use the same cell twice for each word.
+
+https://leetcode.com/problems/word-search-ii/description/
+https://leetcode.com/problems/search-suggestions-system/description/
+
+Ecommerce search suggestions, fuzzy search and inverted index
+
+https://leetcode.com/problems/design-search-autocomplete-system/description/-- todo
+—————————————————————
+1381. Design a Stack With Increment Operation
+lazy propagation stack
+189. Rotate Array
+array otate tricky
+HARD PROBLEMS ONLY
+Count Smaller elements
+https://www.geeksforgeeks.org/problems/count-smaller-elements2214/1?page=1&category=Binary%20Search,DFS,BFS,Heap,prefix-sum,union-find&difficulty=Hard&sortBy=submissions
+https://www.youtube.com/watch?v=1KYzjryTRmg
+
+
+Segment tree
+1649. Create Sorted Array through Instructions
+`
+
+https://leetcode.com/problems/kill-process/editorial/?envType=company&envId=oracle&favoriteSlug=oracle-six-months
+Kill process oracle
+
+1297. Maximum Number of Occurrences of a Substring
+Sliding window, hashmap
+
+MAX stack leetcode premium, in my intellij ds_notes
+https://www.youtube.com/watch?v=9by6MxQOjeM
+
+
+
+
+
+SEGMENT TREEE 
+Range Sum query
+https://leetcode.com/problems/range-sum-query-immutable/description/
+
+Range sum with updates
+https://leetcode.com/problems/range-sum-query-mutable/?envType=problem-list-v2&envId=90wjdpbt
+
+Range min query
+https://www.geeksforgeeks.org/problems/range-minimum-query/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
+
+
+Rage Max query, leetcode skyline problem
+https://leetcode.com/problems/the-skyline-problem/
+
+2158. Amount of New Area Painted Each Day
+https://leetcode.com/problems/amount-of-new-area-painted-each-day/description/?envType=problem-list-v2&envId=segment-tree
+
+
+TRIE. file system, remove directories, sorting, lastindexof, prefix compare
+1233. Remove Sub-Folders from the Filesystem
+
+
+3356. Zero Array Transformation II
+line sweep
+difference array
+
+https://leetcode.com/problems/text-justification/
+text justification, minimum number of lines two texts, google interview
+
+https://leetcode.com/problems/random-pick-with-weight/submissions/1472786779/
+Prefix suml, sampling , probability, weighted distribution
+
+815. Bus Routes
+graph tricky, bfs, uber
+
+341. Flatten Nested List Iterator
+Design question,dequeue, stack depricated, dequeue with initial list in constructor
+
+1428. Leftmost Column with at Least a One
+binary search, ladder approach
+https://www.youtube.com/watch?v=K2E5fMMAf5U
+
+427. Construct Quad Tree
+recursion, uber
+
+399. Evaluate Division
+graph, dfs, DSU
+————————————————————————TCP protocol—————————————————————
+
+TCP protocol is stateful- https://stackoverflow.com/questions/19899236/is-tcp-protocol-stateless
+
+
+Three-Way Handshake Steps:
+1. SYN Segment (Client to Server)
+    * The client initiates the connection by sending a segment with the SYN (synchronize) flag set.
+    * Header Information: This segment contains the client's initial sequence number (SEQ), MSS (Maximum Segment Size), and other options. It does not typically contain data.
+ Client -> Server: [SYN, SEQ=1000, MSS=1460]
+ 
+2. SYN-ACK Segment (Server to Client)
+    * The server responds with a segment that has both SYN and ACK (acknowledgment) flags set.
+    * Header Information: This segment acknowledges the client's SYN (with an acknowledgment number, ACK) and includes the server's initial sequence number.
+ Server -> Client: [SYN, ACK=1001, SEQ=2000, MSS=1460]
+ 
+3. ACK Segment (Client to Server)
+    * The client sends an ACK segment to acknowledge the server's SYN.
+    * Header Information: This segment acknowledges the server's SYN and completes the handshake.
+  Client -> Server: [ACK=2001]  
+
+Detailed Explanation
+The sequence number and acknowledgment number are fundamental components of TCP (Transmission Control Protocol) that ensure reliable data transmission and proper sequencing of packets. They are critical for maintaining the integrity of the data stream and for implementing flow control and error recovery mechanisms.
+
+Sequence Number
+The sequence number is a field in the TCP header that indicates the position of the first byte of data in the current segment within the overall data stream. Here’s how it is used:
+1. Initialization:
+    * When a TCP connection is established, each side (client and server) selects an initial sequence number (ISN) randomly.
+    * For example, the client might choose an ISN of 1000, and the server might choose an ISN of 2000.
+2. Data Transfer:
+    * Each byte of data sent over the TCP connection is numbered sequentially. The sequence number in the TCP header indicates the number of the first byte in the current segment.
+    * For instance, if the client sends a segment with a sequence number of 1000 and 100 bytes of data, the sequence number of the next segment would be 1100.
+3. Segment Structure:
+    * Suppose the client sends "Hello":
+        * "H" (byte 1000), "e" (byte 1001), "l" (byte 1002), "l" (byte 1003), "o" (byte 1004).
+    * If these bytes are sent in a single segment, the TCP header’s sequence number would be 1000, and the length of the data would be 5 bytes.
+
+Acknowledgment Number
+The acknowledgment number is a field in the TCP header used by the receiving side to indicate the next expected byte of data. Here’s how it is used:
+1. Acknowledgment of Data:
+    * The receiver uses the acknowledgment number to inform the sender which bytes have been successfully received.
+    * For example, if the client sends data up to byte 1100, the server’s acknowledgment number will be 1101, indicating it has received all bytes up to and including byte 1100 and is now expecting byte 1101.
+2. Cumulative Acknowledgment:
+    * TCP uses cumulative acknowledgments, meaning the acknowledgment number reflects the next byte expected, confirming receipt of all prior bytes.
+    * If the server acknowledges byte 1101, it implies all bytes up to 1100 have been successfully received.
+
+
+Example of Sequence and Acknowledgment Numbers
+1. Connection Establishment (Three-Way Handshake):
+    * SYN (Client to Server):
+        * Sequence Number: 1000 (client’s ISN)
+    * SYN-ACK (Server to Client):
+        * Sequence Number: 2000 (server’s ISN)
+        * Acknowledgment Number: 1001 (client’s ISN + 1)
+    * ACK (Client to Server):
+        * Sequence Number: 1001 (client’s ISN + 1)
+        * Acknowledgment Number: 2001 (server’s ISN + 1)
+2. Data Transfer:
+    * Client Sends Data:
+        * Sequence Number: 1001
+        * Data: "Hello" (5 bytes)
+    * Server Acknowledges:
+        * Acknowledgment Number: 1006 (1001 + 5 bytes)
+3. Continued Data Transfer:
+    * Server Sends Data:
+        * Sequence Number: 2001
+        * Data: "World" (5 bytes)
+    * Client Acknowledges:
+        * Acknowledgment Number: 2006 (2001 + 5 bytes)
+
+
+Visualisation of Sequence and Acknowledgment
+Consider a simple exchange where the client sends "Hello" and the server responds with "World":
+1. Client to Server:
+    * Sequence Number: 1001
+    * Data: "Hello"
+    * Bytes: H(1001), e(1002), l(1003), l(1004), o(1005)
+2. Server to Client (ACK):
+    * Acknowledgment Number: 1006
+    * No data
+3. Server to Client:
+    * Sequence Number: 2001
+    * Data: "World"
+    * Bytes: W(2001), o(2002), r(2003), l(2004), d(2005)
+4. Client to Server (ACK):
+    * Acknowledgment Number: 2006
+    * No data
+
+
+Summary
+* Sequence Numbers: Used to order bytes of data sent over TCP, ensuring the receiver can properly sequence the data stream.
+* Acknowledgment Numbers: Used by the receiver to inform the sender of the next expected byte, confirming receipt of all prior bytes.
+* Reliable Transmission: Together, sequence and acknowledgment numbers help TCP provide reliable, ordered, and error-checked delivery of data.
+These mechanisms ensure that data is transmitted accurately and efficiently, even in the presence of network errors or packet reordering.
+
+
+Summary
+* Flow Control: Manages the rate at which the sender transmits data to ensure the receiver is not overwhelmed. It uses the sliding window protocol, with the receiver advertising its buffer capacity to the sender.
+* Congestion Control: Manages the overall data transmission rate to prevent network congestion. It uses mechanisms like slow start, congestion avoidance, fast retransmit, and fast recovery to dynamically adjust the sender's transmission rate based on network conditions.
+
+
+————————————————————————————————————————————————————————————————————————————————
+
+DNS ROUTING and BGP (Border Gateway Protocol)
+
+Google Anycast
+
+The user’s DNS resolver directs the request to the nearest PoP using Anycast or GeoDNS, resulting in the request reaching the PoP in India.
+
+DNS Routing + GSLB
+Case 1 when GSLB does not use Anycast.
+1. DNS configuration
+Root servers
+TLDS
+Authorization servers
+India/Mumbai - GSLB —> 11.00.22.1
+Us-east-> GSLB-> 22.00.33.2
+US-west-> GSLB->22.11.33.2
+China->GSLB->33.22.44.3
+…
+
+2. User eneters www.example.com
+3. DNS—> ROOT server-> TLDS-> GEO-DNS AUTH server-> routes request to nearest GSLB
+4. GLSB has configurations to distribute requests to the actual servers.(here after GSLB there will be local load balancers also, not including it in this flow) It also has configurations to route requests to servers of other regions in case its datacenters servers are down.
+
+Failure cases-
+1. When all the servers of a region/datacenter is down, the GSLB can route requests to the servers present in the other regions based on config.
+2. What if the GSLB is down. Then when the users queries www.eaxmple.com, then DNS based on geo-routing will always route the requests from the particular region to the load balancer which is down. This is bad!
+Probable solutions-
+1. Modify DNS config manually/ or automatically(based on TTL maybe) to point to other location.
+For example let’s say all servers and GLSB of India is down, so we need to redirect the requests of Indian users to GLSB of Austrailia. For this we would need to update the DBS entry. As DNS caches at a lot of levels, it would take sometime to reflect the changes everywhere till then there will be a downtime, and when the services and GSLB of India comes back up, the DNS mapping needs to be updated again. This causes significant delay and is not practical.  From Google’s white paper-
+Potentially, this DNS update can be automated but there has to be a mechanism to check service status in other locations and keep track of their state so the system knows where to send users in case of a failure. Considering that services are sometimes deployed in hundreds of locations, it would not be effective to have a central place collecting all the information about services, so the DNS update mechanism would need to be distributed to as many locations as the service is deployed. We consider this a non optimal solution, since there is the possibility to integrate the monitoring and automatic failover in the existing Load Balancing infrastructure.
+
+
+
+Case 1 when GSLB  uses Anycast.
+Anycast is a network addressing and routing methodology in which a single IP address is assigned to multiple servers. When a DNS query is made to an Anycast IP, the routing infrastructure (typically using the BGP protocol) directs the query to the nearest or best-performing server advertising that IP address. By default BGP uses shortest path, and it can be configured to add other properties as well.
+
+So, the flow with anycast would look like this
+1. DNS configuration
+Root servers
+TLDS
+Authorization servers
+www.example.com - GSLB —> 11.00.22.1
+
+The service(example.com)  will have various POP distributed all across the globe. All these POPs will advertise the same ip address.
+1. Now when users queries the DNS, it will get the Ip address back 11.00.22.1.
+2.  Users make a request to IP 11.00.22.1.
+3. Since there are a lot of servers advertising the same ip address, the network uses a routing protocol called BGP which will route the request to the topologically nearest pop/server. If any pop is down, it will stop advertising the IP, all the routers will reconfigure their address book and now the user request will be re routed to the next nearest pop/server
+
+From Google docs-
+Any-cast is a network routing technique where many hosts have the exact same IP address. Clients trying to reach that IP address are routed to the nearest host. If these duplicate hosts all provide the same service, the clients simply receive the service from the host topologically nearest. Anycast per se doesn’t have information on service specific health status, which might result in requests being sent to locations which do not have a healthy instance of the service running. It is then necessary to think about service specific healthchecks. If a given service has about 200 different instances, managing healthchecks and the Border Gateway Protocol 4 (BGP) configuration for each of those instances can be very complicated.
+
+Problem in anycast-
+All GLSBs advertises same IP, so traffic can be routed to any of them by BGP. Now this routing by BGP for anycast does not take into account the health of the servers behind GLSB, So google needed a way to monitor the health of the acutal servers behin GLSB.
+They used ldirector D to monitor the healths. GLSB is the virtual IP (ipvs) behind it has many actual servers with real ips.  
+From google docs- “Another advantage of having Load Balancers as Anycast peers is the reduced number of routing changes, because the Load Balancer combines multiple instances of a service into one VIP.
+That has been one of the concerns regarding Anycast deployments. Having the Load Balancer deal with service specific state healthchecks makes it possible to deploy Anycast not only for UDP based services, but also for TCP based services. We configured the network environment so there is one subnet reserved for all Anycast virtual IPs (VIPs). The routers are configured to accept /32 route advertisements in that subnet from the Load Balancers. This allows the implementation of protection against misconfiguration by using ACLs which only allow routes from the specified subnet, preventing accidental takeover of IP space. Anycast VIPs can be configured in addition to the normal VIPs on the same Load Balancers.”
+
+So, when the last of the actual server goes down behind a GLSB, l director finds it out and it instructs the GLSB to stop advertising, so then the requests wn’t be routed to it. This is how it solves the problem.
+
+Resources
+Google Doc link- https://www.usenix.org/legacy/events/lisa10/tech/full_papers/Weiden.pdf
+LdirectorD setup- https://www.lisenet.com/2015/setting-up-a-load-balancing-cluster-with-heartbeat-and-ldirectord/
+Arpit Bhayani blog- https://www.youtube.com/watch?v=WjT253DBlXk
+How internet works- https://www.youtube.com/watch?v=Q_YpTh0Qq_k
+Aditya kamat BGP anycast- https://www.youtube.com/watch?v=MgjVjGMb_xg&t=807s
+
+
+
+—————————————————————————————————
+
+CASSANDRA  Imp points
+
+The main design goals of Cassandra are:
+* Extremely high availability
+* Performance (high throughput/low latency with emphasis on write-heavy workloads) with unbounded, incremental scalability
+Note: In order to achieve these goals Cassandra trades off some other properties, such as strong consistency.
+
+
+
+
+
+Cassandra vs Mongo DB
+Sure! To understand why MongoDB might be a better choice for your URL shortening service, it’s crucial to compare its architecture, data storage, and access patterns with other NoSQL databases like Cassandra and DynamoDB. Each database has strengths depending on use cases, and in your scenario, MongoDB is more favorable for read-heavy workloads. Here's a detailed comparison:
+1. Data Consistency Models:
+* MongoDB:
+    * MongoDB uses a leader-follower replication model. In this architecture, the leader node (primary) handles all write operations, and follower nodes (replicas) can handle read requests.
+    * This model ensures strong consistency for writes. Any write is first processed by the leader, and then it's asynchronously replicated to the followers.
+    * Reads can be handled by followers or the leader, giving flexibility to optimize for read throughput.
+    * In MongoDB, if the leader fails, an election process takes place among the follower nodes, and a new leader is elected to handle subsequent writes.
+    * The consistency is strong by default on writes, but for reads, you can choose between strong consistency (reading from the primary) or eventual consistency (reading from a secondary).
+* Cassandra and DynamoDB:
+    * Both Cassandra and DynamoDB use a leaderless replication model based on AP (Availability and Partition Tolerance) from the CAP theorem.
+    * They prioritize availability and partition tolerance but provide eventual consistency by default, meaning there could be a delay in synchronizing data across nodes, leading to possible stale reads.
+    * Consistency levels are tunable. For example, in Cassandra, you can configure QUORUM, ONE, or ALL consistency levels based on your needs, but it comes at the cost of performance.
+    * Writes are distributed to multiple nodes in a peer-to-peer fashion, with no single leader node.
+    * Read-repair: Since there is no leader, Cassandra and DynamoDB rely on read-repair mechanisms, which may slow down read performance. When data is read, if any inconsistency is detected across replicas, Cassandra performs a background process to reconcile the differences.
+2. Data Distribution and Sharding:
+* MongoDB:
+    * MongoDB employs automatic sharding using a shard key to distribute data across multiple nodes (or shards).
+    * Sharding allows MongoDB to scale horizontally by splitting data across various shards. Each shard can have a primary-replica set, enabling high availability.
+    * A mongos router routes queries to the appropriate shard based on the shard key.
+    * MongoDB’s leader-follower replication ensures that writes are consistent across all shards, though writes can only go to the leader shard.
+* Cassandra:
+    * Cassandra’s architecture is fully decentralized and peer-to-peer. Data is distributed across multiple nodes using consistent hashing.
+    * There is no concept of a leader node. Every node in the cluster has equal responsibility for reading and writing data.
+    * The data model is column-family-based, which is different from MongoDB’s document model. Each node holds a portion of the data, and the cluster is responsible for replicating it based on replication factors.
+    * Cassandra achieves horizontal scalability by ensuring each node can independently handle both reads and writes. This is ideal for write-heavy workloads.
+* DynamoDB:
+    * DynamoDB is an AWS-managed NoSQL database that provides horizontal scaling using partition keys.
+    * It automatically splits and scales data across multiple partitions, similar to sharding in MongoDB.
+    * Like Cassandra, DynamoDB is leaderless, and reads and writes are distributed across multiple nodes with tunable consistency.
+3. Read and Write Performance:
+* MongoDB:
+    * Since MongoDB has a leader-based architecture, it excels in read-heavy workloads where the system can offload reads to follower replicas. This helps scale reads without compromising consistency.
+    * Write performance can be limited by the fact that all writes have to go through the leader, but it ensures consistency.
+    * For your use case, since reads outnumber writes, MongoDB’s ability to handle reads via followers without requiring read-repair makes it a better choice for high-throughput, low-latency reads.
+* Cassandra:
+    * Cassandra is optimized for write-heavy workloads. Its leaderless architecture allows writes to be distributed across multiple nodes, making it highly available and write-scalable.
+    * However, reads can be slower due to the need for read-repair, especially if the data is inconsistent across replicas.
+    * For a URL shortening service that is read-heavy, this would be a disadvantage as Cassandra may introduce latency during reads due to the need to synchronize data across nodes.
+* DynamoDB:
+    * Like Cassandra, DynamoDB excels in write-heavy applications. It also allows read-write throughput to be scaled elastically, but read consistency can vary based on how the system is tuned (eventual or strong consistency).
+    * For applications with strict read consistency requirements, DynamoDB’s default eventual consistency may not be ideal, and switching to strong consistency can increase latency and cost.
+4. Availability and Partition Tolerance:
+* MongoDB:
+    * MongoDB provides high availability through replication. Even if the leader node fails, followers can be elected as new leaders.
+    * However, MongoDB favors consistency over availability. If the leader is down and no leader has been elected yet, write operations might be blocked temporarily until a new leader is elected.
+    * For read-heavy workloads, MongoDB is robust since reads can continue even if the leader is down (from followers).
+* Cassandra:
+    * Cassandra is built for high availability and partition tolerance. Even if multiple nodes go down, the cluster can continue processing both reads and writes due to its decentralized architecture.
+    * This makes Cassandra ideal for use cases where availability is more critical than consistency.
+    * However, the eventual consistency model might not fit your URL shortening use case well, especially where strong read consistency is desired.
+* DynamoDB:
+    * DynamoDB also focuses on availability and partition tolerance, offering seamless scaling with AWS infrastructure.
+    * Like Cassandra, it is optimized for highly available, distributed systems where partition tolerance is key, but consistency may be weaker.
+5. Data Model:
+* MongoDB:
+    * MongoDB stores data as documents (BSON/JSON-like objects). Each document is flexible and can have its structure, making MongoDB suitable for semi-structured or unstructured data like the URLs and user details in a URL-shortening service.
+    * This flexible schema allows you to store user details and URL mappings naturally, without requiring strict predefined schemas.
+* Cassandra:
+    * Cassandra uses a column-family model (similar to Google’s BigTable), which organizes data into rows and columns, similar to a relational database but more flexible.
+    * While it can handle URL mappings and user data, its column-family model might be less intuitive for this use case compared to MongoDB’s document model.
+* DynamoDB:
+    * DynamoDB uses a key-value or document model, making it versatile and more similar to MongoDB in terms of flexibility. However, its design focus is on highly scalable and available systems where writes dominate.
+Summary: Why MongoDB over Cassandra or DynamoDB?
+* Read-heavy use case: MongoDB can distribute reads across follower nodes, while Cassandra and DynamoDB might require read-repair, slowing down read performance.
+* Strong consistency for writes: MongoDB’s leader-follower model ensures strong consistency for writes, which is important for maintaining accurate URL mappings and user details.
+* Document-based schema: MongoDB’s document model is ideal for storing flexible, semi-structured data like URL mappings and user information.
+* Scalability: MongoDB offers horizontal scaling via sharding, ensuring that both reads and writes scale with the size of the system.
+For write-heavy applications, Cassandra or DynamoDB might be better choices. However, for your read-heavy URL shortening service, MongoDB’s strong consistency, read scalability, and document model make it the more suitable option.
+
+
+
+
+
+
+Cassandra vs Mongo DB
+Sure! To understand why MongoDB might be a better choice for your URL shortening service, it’s crucial to compare its architecture, data storage, and access patterns with other NoSQL databases like Cassandra and DynamoDB. Each database has strengths depending on use cases, and in your scenario, MongoDB is more favorable for read-heavy workloads. Here's a detailed comparison:
+1. Data Consistency Models:
+* MongoDB:
+    * MongoDB uses a leader-follower replication model. In this architecture, the leader node (primary) handles all write operations, and follower nodes (replicas) can handle read requests.
+    * This model ensures strong consistency for writes. Any write is first processed by the leader, and then it's asynchronously replicated to the followers.
+    * Reads can be handled by followers or the leader, giving flexibility to optimize for read throughput.
+    * In MongoDB, if the leader fails, an election process takes place among the follower nodes, and a new leader is elected to handle subsequent writes.
+    * The consistency is strong by default on writes, but for reads, you can choose between strong consistency (reading from the primary) or eventual consistency (reading from a secondary).
+* Cassandra and DynamoDB:
+    * Both Cassandra and DynamoDB use a leaderless replication model based on AP (Availability and Partition Tolerance) from the CAP theorem.
+    * They prioritize availability and partition tolerance but provide eventual consistency by default, meaning there could be a delay in synchronizing data across nodes, leading to possible stale reads.
+    * Consistency levels are tunable. For example, in Cassandra, you can configure QUORUM, ONE, or ALL consistency levels based on your needs, but it comes at the cost of performance.
+    * Writes are distributed to multiple nodes in a peer-to-peer fashion, with no single leader node.
+    * Read-repair: Since there is no leader, Cassandra and DynamoDB rely on read-repair mechanisms, which may slow down read performance. When data is read, if any inconsistency is detected across replicas, Cassandra performs a background process to reconcile the differences.
+2. Data Distribution and Sharding:
+* MongoDB:
+    * MongoDB employs automatic sharding using a shard key to distribute data across multiple nodes (or shards).
+    * Sharding allows MongoDB to scale horizontally by splitting data across various shards. Each shard can have a primary-replica set, enabling high availability.
+    * A mongos router routes queries to the appropriate shard based on the shard key.
+    * MongoDB’s leader-follower replication ensures that writes are consistent across all shards, though writes can only go to the leader shard.
+* Cassandra:
+    * Cassandra’s architecture is fully decentralized and peer-to-peer. Data is distributed across multiple nodes using consistent hashing.
+    * There is no concept of a leader node. Every node in the cluster has equal responsibility for reading and writing data.
+    * The data model is column-family-based, which is different from MongoDB’s document model. Each node holds a portion of the data, and the cluster is responsible for replicating it based on replication factors.
+    * Cassandra achieves horizontal scalability by ensuring each node can independently handle both reads and writes. This is ideal for write-heavy workloads.
+* DynamoDB:
+    * DynamoDB is an AWS-managed NoSQL database that provides horizontal scaling using partition keys.
+    * It automatically splits and scales data across multiple partitions, similar to sharding in MongoDB.
+    * Like Cassandra, DynamoDB is leaderless, and reads and writes are distributed across multiple nodes with tunable consistency.
+3. Read and Write Performance:
+* MongoDB:
+    * Since MongoDB has a leader-based architecture, it excels in read-heavy workloads where the system can offload reads to follower replicas. This helps scale reads without compromising consistency.
+    * Write performance can be limited by the fact that all writes have to go through the leader, but it ensures consistency.
+    * For your use case, since reads outnumber writes, MongoDB’s ability to handle reads via followers without requiring read-repair makes it a better choice for high-throughput, low-latency reads.
+* Cassandra:
+    * Cassandra is optimized for write-heavy workloads. Its leaderless architecture allows writes to be distributed across multiple nodes, making it highly available and write-scalable.
+    * However, reads can be slower due to the need for read-repair, especially if the data is inconsistent across replicas.
+    * For a URL shortening service that is read-heavy, this would be a disadvantage as Cassandra may introduce latency during reads due to the need to synchronize data across nodes.
+* DynamoDB:
+    * Like Cassandra, DynamoDB excels in write-heavy applications. It also allows read-write throughput to be scaled elastically, but read consistency can vary based on how the system is tuned (eventual or strong consistency).
+    * For applications with strict read consistency requirements, DynamoDB’s default eventual consistency may not be ideal, and switching to strong consistency can increase latency and cost.
+4. Availability and Partition Tolerance:
+* MongoDB:
+    * MongoDB provides high availability through replication. Even if the leader node fails, followers can be elected as new leaders.
+    * However, MongoDB favors consistency over availability. If the leader is down and no leader has been elected yet, write operations might be blocked temporarily until a new leader is elected.
+    * For read-heavy workloads, MongoDB is robust since reads can continue even if the leader is down (from followers).
+* Cassandra:
+    * Cassandra is built for high availability and partition tolerance. Even if multiple nodes go down, the cluster can continue processing both reads and writes due to its decentralized architecture.
+    * This makes Cassandra ideal for use cases where availability is more critical than consistency.
+    * However, the eventual consistency model might not fit your URL shortening use case well, especially where strong read consistency is desired.
+* DynamoDB:
+    * DynamoDB also focuses on availability and partition tolerance, offering seamless scaling with AWS infrastructure.
+    * Like Cassandra, it is optimized for highly available, distributed systems where partition tolerance is key, but consistency may be weaker.
+5. Data Model:
+* MongoDB:
+    * MongoDB stores data as documents (BSON/JSON-like objects). Each document is flexible and can have its structure, making MongoDB suitable for semi-structured or unstructured data like the URLs and user details in a URL-shortening service.
+    * This flexible schema allows you to store user details and URL mappings naturally, without requiring strict predefined schemas.
+* Cassandra:
+    * Cassandra uses a column-family model (similar to Google’s BigTable), which organizes data into rows and columns, similar to a relational database but more flexible.
+    * While it can handle URL mappings and user data, its column-family model might be less intuitive for this use case compared to MongoDB’s document model.
+* DynamoDB:
+    * DynamoDB uses a key-value or document model, making it versatile and more similar to MongoDB in terms of flexibility. However, its design focus is on highly scalable and available systems where writes dominate.
+Summary: Why MongoDB over Cassandra or DynamoDB?
+* Read-heavy use case: MongoDB can distribute reads across follower nodes, while Cassandra and DynamoDB might require read-repair, slowing down read performance.
+* Strong consistency for writes: MongoDB’s leader-follower model ensures strong consistency for writes, which is important for maintaining accurate URL mappings and user details.
+* Document-based schema: MongoDB’s document model is ideal for storing flexible, semi-structured data like URL mappings and user information.
+* Scalability: MongoDB offers horizontal scaling via sharding, ensuring that both reads and writes scale with the size of the system.
+For write-heavy applications, Cassandra or DynamoDB might be better choices. However, for your read-heavy URL shortening service, MongoDB’s strong consistency, read scalability, and document model make it the more suitable option.
+
+
+
+
+
+
+
+
