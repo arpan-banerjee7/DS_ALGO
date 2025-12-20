@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-
+*.project
 # Log file
 *.log
 
@@ -21,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+
+# IDE / project files
+.project
+.classpath
+
+# Ignore a removed/generated file from DifferenceArray
+DifferenceArray/MaxFrequency2_LC3347
